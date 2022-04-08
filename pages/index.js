@@ -10,23 +10,100 @@ export default function Home() {
       </Head>
 
       <header>
+        {/* site logo */} 
 
+        {/* github, linked in */}
       </header>
 
       <main>
         {/* hero */}
+        <section>
+          <div>
+            Hello!
+            I am Rendo, 
+            and I do Web Development.
+          </div>
 
-        UwU
-
+          {/* lottie space waving */}
+          {/* mobile space waving png */}
+        </section>
 
         {/* skills */}
+        <section>
+          <div>
+            <h2>Skills</h2>
+            
+            <div>
+              <h3>My current toolset</h3>
+              <p>HTML, CSS, JavaScript, PHP, React.js, Next.js, Tailwind CSS, Laravel, Alpine.js, Git, GitHub, Visual Studio Code</p>
+            </div>
 
+            <div>
+              <h3>Other known tools and skills</h3>
+              <p>C#, ASP.NET, MySQL, Android Development (Java), Java REST API, Vue.js, phpMyAdmin, Visual Studio, IntelliJ IDEA</p>
+            </div>
+          </div>
+
+          {/* lottie space hovering */}
+          {/* mobile space w/ stars */}
+          {/* moon-esque background, rounded top and bottom svg */}
+        </section>
 
         {/* projects */}
+        <section>
+          <div>
+            <h2>Projects</h2>
 
+            <div>
+              <h3>Personal Works</h3>
+
+              <div>
+                <div>
+                  <h4>Konolist</h4>
+                  <p>A list web app simplified for your convenience.</p>
+                  <p>This is my second finished project using Create React App and Tailwind CSS. The app is made to look like MS Todo, both Windows and Android vesions, for both desktop and mobile breakpoints respectively.</p>
+                  <p>My first project that works as an installable Progressive Web App (PWA). The app fully works offline and also has a fancy introductory page.</p>
+                  <p>User data is stored locally using local storage and is encrypted using CryptoJS.</p>
+                </div>
+
+                <div>
+                  <h4>Hacker News</h4>
+                  <p>My second attempt on a Hacker News (ycombinator) viewer that closely mimics Reddit's design and layout.</p>
+                  <p>The goal this time is to faithfully mimic Reddit's UI/UX for both mobile and desktop breakpoints.</p>
+                  <p>My first finished project using Next.js and whole other libraries.</p>
+                  <p>My first project that has a dark mode switch built in.</p>
+                  <p>Not as performant as my first attempt when run on Firefox and potentially WebKit-based browsers too.</p>
+                </div>
+
+                <div>
+                  <h4>Readit News</h4>
+                  <p>My larger-scale big app that I finished using Create React App.</p>
+                  <p>The goal was to fully consume Hacker News' public API posted on GitHub.</p>
+                  <p>I started this project when I finally had time to do so after I graduated back on 2021.</p>
+                  <p>Tries to loosely mimic Reddit's desktop design and layout, but still responsive enough for mobile use.</p>
+                </div>
+
+                <div>
+                  <h4>Recon Game Library</h4>
+                  <p>An Assembly 8086 project I created for school a project.</p>
+                  <p>Contains a game selection screen and two games: Snake and Tic-Tac-Toe.</p>
+                  <p>Made to run on emu8086 assembly emulator.</p>
+                </div>
+
+                {/* buttons: view | source */}
+              </div>
+            </div>
+          </div>
+
+          {/* stars background */}
+          {/* lottie rocketship */}
+          {/* mobile rocketship */}
+        </section>
 
         {/* contact */}
+        <section>
 
+        </section>
       </main>
 
       <footer>
