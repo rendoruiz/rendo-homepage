@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import LinkButton from '../components/LinkButton'
 
 export default function Home() {
   return (
@@ -21,8 +22,8 @@ export default function Home() {
 
       <main className='grid content-start'>
         {/* hero */}
-        <section className='grid w-full max-w-screen-lg min-h-[80vh]'>
-          <div className='grid content-center px-5 pt-20 pb-10 text-center'>
+        <section className='grid min-h-[80vh]'>
+          <div className='grid content-center px-5 pt-20 pb-10 w-full max-w-screen-lg text-center'>
             <p className=' font-extralight text-7xl '>
               Hello!
             </p>
@@ -51,7 +52,7 @@ export default function Home() {
 
         {/* skills */}
         <section className='grid bg-stone-200 text-black/80'>
-          <div className='grid gap-6 px-5 pt-20 pb-10'>
+          <div className='grid content-start gap-6 px-5 pt-14 pb-10'>
             <h2 className='font-light text-4xl tracking-wide'>Skills</h2>
             
             <div className='grid gap-2'>
@@ -68,7 +69,7 @@ export default function Home() {
                 Known tools and skills
               </h3>
               <p className='font-light text-xl tracking-wider leading-relaxed'>
-                C#, ASP.NET, MySQL, Android Development (Java), Java REST API, Vue.js, phpMyAdmin, Visual Studio, IntelliJ IDEA
+                C#, ASP.NET, MySQL, Android Development (Java), Java REST API, Vue.js, phpMyAdmin, Visual Studio, IntelliJ IDEA.
               </p>
             </div>
 
@@ -90,65 +91,177 @@ export default function Home() {
               className='w-full moon-glow'
             />
           </div>
-          <div>
-            <h2>Projects</h2>
 
-            <div>
-              <h3>Personal Works</h3>
+          <div className='grid content-start gap-6 px-5 py-10 w-full max-w-screen-lg'>
+            <h2 className='font-light text-4xl tracking-wide'>
+              Projects
+            </h2>
 
-              <div>
-                <div>
-                  <h4>Konolist</h4>
-                  <p>A list web app simplified for your convenience.</p>
-                  <p>This is my second finished project using Create React App and Tailwind CSS. The app is made to look like MS Todo, both Windows and Android vesions, for both desktop and mobile breakpoints respectively.</p>
-                  <p>My first project that works as an installable Progressive Web App (PWA). The app fully works offline and also has a fancy introductory page.</p>
-                  <p>User data is stored locally using local storage and is encrypted using CryptoJS.</p>
-                </div>
+            <div className='grid content-start gap-3'>
+              <h3 className='font-extralight text-3xl'>
+                Personal Works
+              </h3>
 
-                <div>
-                  <h4>Hacker News</h4>
-                  <p>My second attempt on a Hacker News (ycombinator) viewer that closely mimics Reddit's design and layout.</p>
-                  <p>The goal this time is to faithfully mimic Reddit's UI/UX for both mobile and desktop breakpoints.</p>
-                  <p>My first finished project using Next.js and whole other libraries.</p>
-                  <p>Also my first project that has a dark mode switch built in.</p>
-                  <p>Not as performant as my first attempt when run on Firefox and potentially WebKit-based browsers too.</p>
-                </div>
+              <ul className='grid content-start gap-10 tracking-wide'>
+                <li className='grid gap-2'>
+                  <h4 className='font-medium text-2xl'>
+                    Konolist
+                  </h4>
+                  <p className='italic'>
+                    A list web app simplified for your convenience.
+                  </p>
+                  <p>
+                    This is my second finished project using Create React App and Tailwind CSS. The app is made to look like MS Todo, both Windows and Android vesions, for both desktop and mobile breakpoints respectively.
+                  </p>
+                  <p>
+                    My first project that works as an installable Progressive Web App (PWA). The app fully works offline and also comes with a fancy introductory page.
+                  </p>
+                  <p>
+                    User data is stored locally on local storage and is encrypted using CryptoJS.
+                  </p>
 
-                <div>
-                  <h4>Readit News</h4>
-                  <p>My larger-scale big app that I finished using Create React App.</p>
-                  <p>The goal was to fully consume Hacker News' public API posted on GitHub.</p>
-                  <p>Tries to loosely mimic Reddit's desktop design and layout, but still responsive enough for mobile use.</p>
-                </div>
+                  <div className='grid grid-cols-2 gap-3 mt-3'>
+                    <LinkButton 
+                      text='View'
+                    />
+                    <LinkButton 
+                      text='Source'
+                    />
+                  </div>
+                </li>
 
-                <div>
-                  <h4>Recon Game Library</h4>
-                  <p>An Assembly 8086 project I created for school a project.</p>
-                  <p>Contains a game selection screen and two games: Snake and Tic-Tac-Toe.</p>
-                  <p>Made to run on emu8086 assembly emulator.</p>
-                </div>
+                <li className='grid gap-2'>
+                  <h4 className='font-medium text-2xl'>
+                    Hacker News
+                  </h4>
+                  <p className='italic'>
+                    Browse Hacker News with Reddit's design and layout.
+                  </p>
+                  <p>
+                    My second attempt on a Hacker News viewer and the goal this time is to faithfully mimic Reddit's looks even further for both mobile and desktop breakpoints.
+                  </p>
+                  <p>
+                    This project is the first one I have finished using Next.js together with whole other libraries.
+                  </p>
+                  <p>
+                    It is also my first project that has a dark mode switch built in.
+                  </p>
+                  <p>
+                    However, it is not as performant as my first attempt when ran on Firefox and potentially WebKit-based browsers too.
+                  </p>
+                  
+                  <div className='grid grid-cols-2 gap-3 mt-3'>
+                    <LinkButton 
+                      text='View'
+                    />
+                    <LinkButton 
+                      text='Source'
+                    />
+                  </div>
+                </li>
 
-                {/* buttons: view | source */}
-              </div>
+                <li className='grid gap-2'>
+                  <h4 className='font-medium text-2xl'>
+                    Readit News
+                  </h4>
+                  <p>
+                    My first web app project at this scale created using Create React App.
+                  </p>
+                  <p>
+                    Has support for home page, story page, and user page.
+                  </p>
+                  <p>
+                    The goal for this project is to fully consume Hacker News' public API that is posted on GitHub.
+                  </p>
+                  <p>
+                    It tries to mimic Reddit's desktop design and layout very loosely, but still responsive enough for mobile use.
+                  </p>
+                  
+                  <div className='grid grid-cols-2 gap-3 mt-3'>
+                    <LinkButton 
+                      text='View'
+                    />
+                    <LinkButton 
+                      text='Source'
+                    />
+                  </div>
+                </li>
+
+                <li className='grid gap-2'>
+                  <h4 className='font-medium text-2xl'>
+                    Recon Game Library
+                  </h4>
+                  <p>
+                    An old Assembly 8086 project I once created for school a project.
+                  </p>
+                  <p>
+                    The program starts with the home screen showing game selection menu for two games: Snake and Tic-Tac-Toe.
+                  </p>
+                  <p>
+                    Made to run on emu8086 assembly emulator.
+                  </p>
+                  
+                  <div className='grid mt-3'>
+                    <LinkButton 
+                      text='Source'
+                    />
+                  </div>
+                </li>
+              </ul>
             </div>
 
-            <div>
-              <h3>Sites I've worked on</h3>
-              <p>as the Web Developer.</p>
+            <div className='grid content-start gap-5 mt-3'>
+              <div className='grid content-start'>
+                <h3 className='font-extralight text-3xl'>
+                  Sites I've worked on,
+                </h3>
+                <p className='mt-1 font-thin text-base leading-none tracking-widest'>
+                  as the Web Developer.
+                </p>
+              </div>
+              
+              <ul className='grid content-start gap-10 tracking-wide'>
+                <li className='grid gap-2'>
+                  <h4 className='font-medium text-xl'>
+                    Alberta Drone Specialists
+                  </h4>
 
-              bridgeittech.
-              abdronespecialists
+                  <div className='grid mt-1'>
+                    <LinkButton 
+                      text='View'
+                    />
+                  </div>
+                </li>
+
+                <li className='grid gap-2'>
+                  <h4 className='font-medium text-xl'>
+                    BridgeIT Tech Solutions
+                  </h4>
+
+                  <div className='grid mt-1'>
+                    <LinkButton 
+                      text='View'
+                    />
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
-
-          {/* stars background */}
-          {/* lottie rocketship */}
-          {/* mobile rocketship */}
         </section>
 
         {/* contact */}
-        <section>
+        <section className='grid'>
+          <div className='grid gap-10 content-start px-5 py-10 w-full max-w-screen-lg'>
+            <img
+              src='img/spacecat.svg'
+              className='justify-self-center w-full max-w-[320px]'
+            />
 
+            <div>
+
+              <h2 className='font-light text-4xl tracking-wide'>Contact</h2>
+            </div>
+          </div>
         </section>
       </main>
 
