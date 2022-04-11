@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-black;
+}
+
+img {
+  @apply select-none pointer-events-none;
+}
+
+.moon-glow {
+  filter: drop-shadow(0 2px 14px rgba(231, 229, 228, 1));
+}
