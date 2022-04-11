@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
       </Head>
 
@@ -137,10 +137,10 @@ export default function Home() {
                     Hacker News
                   </h4>
                   <p className='italic'>
-                    Browse Hacker News with Reddit's design and layout.
+                    Browse Hacker News with Reddit&apos;s design and layout.
                   </p>
                   <p>
-                    My second attempt on a Hacker News viewer and the goal this time is to faithfully mimic Reddit's looks even further for both mobile and desktop breakpoints.
+                    My second attempt on a Hacker News viewer and the goal this time is to faithfully mimic Reddit&apos;s looks even further for both mobile and desktop breakpoints.
                   </p>
                   <p>
                     This project is the first one I have finished using Next.js together with whole other libraries.
@@ -175,10 +175,10 @@ export default function Home() {
                     Has support for home page, story page, and user page.
                   </p>
                   <p>
-                    The goal for this project is to fully consume Hacker News' public API that is posted on GitHub.
+                    The goal for this project is to fully consume Hacker News&apos; public API that is posted on GitHub.
                   </p>
                   <p>
-                    It tries to mimic Reddit's desktop design and layout very loosely, but still responsive enough for mobile use.
+                    It tries to mimic Reddit&apos;s desktop design and layout very loosely, but still responsive enough for mobile use.
                   </p>
                   
                   <div className='grid grid-cols-2 gap-3 mt-3'>
@@ -220,7 +220,7 @@ export default function Home() {
             <div className='grid content-start gap-5 mt-3'>
               <div className='grid content-start'>
                 <h3 className='font-extralight text-3xl'>
-                  Sites I've worked on,
+                  Sites I&apos;ve worked on,
                 </h3>
                 <p className='mt-1 font-thin text-base leading-none tracking-widest'>
                   as the Web Developer.
