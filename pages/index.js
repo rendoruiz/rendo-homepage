@@ -75,7 +75,7 @@ export default function Home() {
 
             <img 
               src='img/astronaut.svg'
-              alt='an astronaut reading naugthy alien (oc) smutfics on the moon'
+              alt='an astronaut reading naugthy alien (oc) smutfics on the moon for extra immersion'
               className='mt-6 justify-self-center drop-shadow-lg w-3/4 max-w-[250px]'
             />
           </div>
@@ -123,9 +123,11 @@ export default function Home() {
                   <div className='grid grid-cols-2 gap-3 mt-3'>
                     <LinkButton 
                       text='View'
+                      href='https://www.kono.cx/'
                     />
                     <LinkButton 
                       text='Source'
+                      href='https://github.com/rendoruiz/kono-list'
                     />
                   </div>
                 </li>
@@ -153,9 +155,11 @@ export default function Home() {
                   <div className='grid grid-cols-2 gap-3 mt-3'>
                     <LinkButton 
                       text='View'
+                      href='https://news.knkd.app/'
                     />
                     <LinkButton 
                       text='Source'
+                      href='https://github.com/rendoruiz/nextjs-hackernews'
                     />
                   </div>
                 </li>
@@ -180,9 +184,11 @@ export default function Home() {
                   <div className='grid grid-cols-2 gap-3 mt-3'>
                     <LinkButton 
                       text='View'
+                      href='https://old.news.knkd.app/'
                     />
                     <LinkButton 
                       text='Source'
+                      href='https://github.com/rendoruiz/reactjs-hackernews'
                     />
                   </div>
                 </li>
@@ -204,6 +210,7 @@ export default function Home() {
                   <div className='grid mt-3'>
                     <LinkButton 
                       text='Source'
+                      href='https://github.com/rendoruiz/asm8086-recongamelibrary'
                     />
                   </div>
                 </li>
@@ -229,6 +236,7 @@ export default function Home() {
                   <div className='grid mt-1'>
                     <LinkButton 
                       text='View'
+                      href='https://abdronespecialists.ca/'
                     />
                   </div>
                 </li>
@@ -241,6 +249,7 @@ export default function Home() {
                   <div className='grid mt-1'>
                     <LinkButton 
                       text='View'
+                      href='https://bridgeittech.ca/'
                     />
                   </div>
                 </li>
@@ -254,11 +263,11 @@ export default function Home() {
           <div className='grid gap-10 content-start px-5 py-10 w-full max-w-screen-lg'>
             <img
               src='img/spacecat.svg'
+              alt='stranded lab cat wandering on space, thinking about its life choices (assuming it had one)'
               className='justify-self-center w-full max-w-[320px]'
             />
 
             <div>
-
               <h2 className='font-light text-4xl tracking-wide'>Contact</h2>
             </div>
           </div>
