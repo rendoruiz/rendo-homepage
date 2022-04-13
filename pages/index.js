@@ -19,19 +19,44 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet" />
       </Head>
 
-      <header className='p-5'>
-        <div className='font-medium text-2xl tracking-wide'>
-          rendo
+      <header className='flex justify-between items-center px-5 pt-5 pb-2'>
+        <div className='flex items-center'>
+          <img 
+            src='img/logo.svg'
+            className='w-6 h-6'
+          />
+          <span className='ml-2 font-light text-stone-200 text-2xl tracking-wide scale-x-110 origin-left'>
+            rendo
+          </span>
         </div>
-        <div>
-
+        <div className='grid grid-flow-col gap-6'>
+          <a 
+            href='https://www.linkedin.com/in/rendo-ruiz'
+            className='opacity-50 hover:opacity-90'
+          >
+            <img 
+              src='img/icon-li.svg' 
+              alt='linkedin page'
+              className='w-6 h-6'
+            />
+          </a>
+          <a 
+            href='https://github.com/rendoruiz'
+            className='opacity-50 hover:opacity-90'
+          >
+            <img 
+              src='img/icon-gh.svg' 
+              alt='github page'
+              className='w-6 h-6'
+            />
+          </a>
         </div>
       </header>
 
       <main className='grid content-start'>
         {/* hero */}
         <section className='grid min-h-[80vh]'>
-          <div className='grid content-center mx-auto px-5 py-12 w-full max-w-screen-lg text-center md:grid-cols-2 md:items-center md:text-left lg:grid-cols-[1fr,1.25fr] lg:pt-28 lg:pb-16'>
+          <div className='grid content-center mx-auto px-5 py-16 w-full max-w-screen-lg text-center md:grid-cols-2 md:items-center md:text-left lg:grid-cols-[1fr,1.25fr] lg:pt-28 lg:pb-16'>
             <div className='grid content-center md:justify-self-center'>
               <p className='font-extralight text-7xl md:tracking-wide lg:font-normal lg:text-8xl'>
                 Hello!
@@ -47,7 +72,7 @@ export default function Home() {
             <img  
               src='img/space.svg'
               alt='space stuff chilling (literally lmao) on space'
-              className='justify-self-center pt-14 w-10/12 max-w-[320px] md:pt-4 md:max-w-[350px] lg:max-w-[400px]'
+              className='justify-self-center pt-16 w-10/12 max-w-[320px] md:pt-4 md:max-w-[350px] lg:max-w-[400px]'
             />
           </div>
 
@@ -55,7 +80,7 @@ export default function Home() {
           <div className='self-end grid -mb-1 pt-10 overflow-hidden'>
             <img 
               aria-hidden='true'
-              src='img/curve-sm.svg' 
+              src='img/moon-curve.svg' 
               className='w-full rotate-180 moon-glow'
             />
           </div>
@@ -102,7 +127,7 @@ export default function Home() {
           <div className='self-end grid -mt-1 pb-10 overflow-hidden'>
             <img 
               aria-hidden='true'
-              src='img/curve-sm.svg' 
+              src='img/moon-curve.svg' 
               className='w-full moon-glow'
             />
           </div>
