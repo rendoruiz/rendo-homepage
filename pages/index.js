@@ -122,7 +122,7 @@ export default function Home() {
                       Konolist
                     </h4>
                     <p className='font-normal italic'>
-                      "A list web app simplified for your convenience."
+                      &quot;A list web app simplified for your convenience.&quot;
                     </p>
                     <p>
                       This is my second finished project using Create React App and Tailwind CSS. The app is made to look like MS Todo, both Windows and Android vesions, for both desktop and mobile breakpoints respectively.
@@ -158,7 +158,7 @@ export default function Home() {
                       Hacker News
                     </h4>
                     <p className='font-normal italic'>
-                      "Browse Hacker News with Reddit&apos;s design and layout."
+                      &quot;Browse Hacker News with Reddit&apos;s design and layout.&quot;
                     </p>
                     <p>
                       My second attempt on a Hacker News viewer and the goal this time is to faithfully mimic Reddit&apos;s looks even further for both mobile and desktop breakpoints.
