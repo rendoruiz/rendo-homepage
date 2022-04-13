@@ -296,9 +296,14 @@ export default function Home() {
                 </p>
               </div>
               
-              <ul className='grid content-start gap-10 tracking-wide md:grid-cols-2'>
+              <ul className='grid content-start gap-12 tracking-wide md:grid-cols-2 lg:gap-16'>
                 <li className='grid content-start gap-4'>
-                  <h4 className='font-medium text-xl'>
+                  <ProjectImage 
+                    src='img/card-abdrones.png' 
+                    alt='alberta drone specialists card image'
+                  />
+
+                  <h4 className='font-medium text-2xl lg:font-normal lg:tracking-wide'>
                     Alberta Drone Specialists
                   </h4>
 
@@ -311,7 +316,12 @@ export default function Home() {
                 </li>
 
                 <li className='grid content-start gap-4'>
-                  <h4 className='font-medium text-xl'>
+                  <ProjectImage 
+                    src='img/card-bridgeit.png' 
+                    alt='bridgeit tech solutions card image'
+                  />
+
+                  <h4 className='font-medium text-2xl lg:font-normal lg:tracking-wide'>
                     BridgeIT Tech Solutions
                   </h4>
 
@@ -343,8 +353,22 @@ export default function Home() {
         </section>
       </main>
 
-      <footer>
-
+      <footer className='grid'>
+        <div className='grid place-items-center mx-auto p-5 w-full max-w-screen-lg'>
+          <p className='font-light text-stone-100'>
+            <span className='opacity-50'>
+              &copy; 2022&nbsp;
+            </span>
+            <a 
+              href='https://rendo.ca'
+              target='_blank'
+              rel='noreferrer'
+              className='font-normal opacity-50 transition-opacity hover:opacity-100'
+            >
+              Rendo Ruiz
+            </a>
+          </p>
+        </div>
       </footer>
     </div>
   )
