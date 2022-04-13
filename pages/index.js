@@ -19,8 +19,8 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet" />
       </Head>
 
-      <header className='flex justify-between items-center px-5 pt-5 pb-2'>
-        <div className='flex items-center'>
+      <header className='flex justify-between items-center mx-auto px-5 pt-5 pb-2 w-full max-w-screen-lg lg:px-9 lg:pt-7'>
+        <div className='flex items-center select-none pointer-events-none'>
           <img 
             src='img/logo.svg'
             className='w-6 h-6'
@@ -29,6 +29,7 @@ export default function Home() {
             rendo
           </span>
         </div>
+
         <div className='grid grid-flow-col gap-6'>
           <a 
             href='https://www.linkedin.com/in/rendo-ruiz'
@@ -56,7 +57,7 @@ export default function Home() {
       <main className='grid content-start'>
         {/* hero */}
         <section className='grid min-h-[80vh]'>
-          <div className='grid content-center mx-auto px-5 py-16 w-full max-w-screen-lg text-center md:grid-cols-2 md:items-center md:text-left lg:grid-cols-[1fr,1.25fr] lg:pt-28 lg:pb-16'>
+          <div className='grid content-center mx-auto px-5 py-16 w-full max-w-screen-lg text-center md:grid-cols-2 md:items-center md:text-left lg:grid-cols-[1fr,1.25fr]'>
             <div className='grid content-center md:justify-self-center'>
               <p className='font-extralight text-7xl md:tracking-wide lg:font-normal lg:text-8xl'>
                 Hello!
@@ -88,7 +89,7 @@ export default function Home() {
 
         {/* skills */}
         <section className='grid bg-stone-200 text-black/80'>
-          <div className='grid content-start gap-6 mx-auto px-5 py-16 w-full max-w-screen-lg md:grid-cols-2 md:items-center md:pt-10 lg:grid-cols-[1.2fr,1fr]'>
+          <div className='grid content-start gap-6 mx-auto px-5 py-16 w-full max-w-screen-lg md:grid-cols-2 md:items-center md:py-10 lg:grid-cols-[1.2fr,1fr]'>
             <div className='grid content-start gap-6 lg:gap-8'>
               <h2 className='font-light text-4xl tracking-wide md:text-5xl'>
                 Skills
@@ -142,7 +143,7 @@ export default function Home() {
                 Personal Works
               </h3>
 
-              <ul className='grid gap-14 tracking-wide md:grid-cols-2 lg:gap-y-16 lg:font-light lg:text-lg'>
+              <ul className='grid gap-14 tracking-wide md:grid-cols-2 lg:gap-16 lg:font-light lg:text-lg'>
                 <li className='grid gap-4 md:grid-rows-[auto,1fr,auto]'>
                   <ProjectImage 
                     src='img/card-kl.png' 
