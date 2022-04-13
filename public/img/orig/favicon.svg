@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="icon icon-tabler icon-tabler-square" width="29" height="29" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" version="1.1" viewBox="0 0 17.4 17.4" xmlns="http://www.w3.org/2000/svg">
+ <rect x="5e-7" y="5e-7" width="17.4" height="17.4" rx="2.175" style="fill:#000;stroke-width:0"/>
+ <rect x="5.4687e-7" y="5.4687e-7" width="17.4" height="17.4" rx="2.175" style="fill-opacity:.25;fill:#4c1d95;stroke-width:0"/>
+ <path d="m10.346 3.9649q-1.2633-0.0085938-2.2 0.53281-0.93672 0.53281-1.4781 1.4867v-0.4125l-0.060156-1.4352h-0.97969v9.2984h1.057l-0.0085937-5.9469q0.17188-0.64453 0.48984-1.1086 0.32656-0.47266 0.76484-0.78203 0.45547-0.31797 1.0227-0.46406 0.57578-0.15469 1.2289-0.15469 0.37812 0 0.73906 0.042969 0.36094 0.042969 0.71328 0.12031l0.1375-0.99688q-0.26641-0.085938-0.66172-0.12891-0.38672-0.051562-0.76484-0.051562z" style="fill:#e7e5e4;font-variation-settings:'wght' 300;stroke-width:.9;stroke:#e7e5e4"/>
+</svg>

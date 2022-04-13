@@ -4,7 +4,7 @@ import ProjectImage from '../components/ProjectImage'
 
 export default function Home() {
   return (
-    <div className='grid min-h-screen bg-violet-900/20 text-white font-["Roboto"]'>
+    <div className='grid min-h-screen bg-violet-900/25 font-["Roboto"] text-white'>
       <Head>
         <title>Rendo - Home</title>
         <meta name="description" content="Just a cat, lost in space." />
@@ -15,21 +15,24 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap" rel="stylesheet" />
       </Head>
 
-      <header>
-        {/* site logo */} 
+      <header className='p-5'>
+        <div className='font-medium text-2xl tracking-wide'>
+          rendo
+        </div>
+        <div>
 
-        {/* github, linked in */}
+        </div>
       </header>
 
       <main className='grid content-start'>
         {/* hero */}
         <section className='grid min-h-[80vh]'>
-          <div className='grid content-center mx-auto px-5 pt-20 pb-10 w-full max-w-screen-lg text-center md:grid-cols-2 md:items-center md:text-left lg:grid-cols-[1fr,1.25fr] lg:pt-28 lg:pb-16'>
+          <div className='grid content-center mx-auto px-5 py-12 w-full max-w-screen-lg text-center md:grid-cols-2 md:items-center md:text-left lg:grid-cols-[1fr,1.25fr] lg:pt-28 lg:pb-16'>
             <div className='grid content-center md:justify-self-center'>
-              <p className=' font-extralight text-7xl md:tracking-wide lg:font-normal lg:text-8xl'>
+              <p className='font-extralight text-7xl md:tracking-wide lg:font-normal lg:text-8xl'>
                 Hello!
               </p>
-              <p className='mt-3 text-3xl font-thin tracking-wider md:mt-5 md:text-4xl lg:text-[2.5rem] lg:leading-[1.1]'>
+              <p className='mt-3 font-thin text-3xl tracking-wider md:mt-5 md:text-4xl lg:text-[2.5rem] lg:leading-[1.1]'>
                 I&apos;m&nbsp;
                 <span className='font-normal'>Rendo</span>, 
                 <br />
@@ -40,7 +43,7 @@ export default function Home() {
             <img  
               src='img/space.svg'
               alt='space stuff chilling (literally lmao) on space'
-              className='pt-14 justify-self-center w-10/12 max-w-[320px] md:pt-4 md:max-w-[350px] lg:max-w-[400px]'
+              className='justify-self-center pt-14 w-10/12 max-w-[320px] md:pt-4 md:max-w-[350px] lg:max-w-[400px]'
             />
           </div>
 
@@ -56,7 +59,7 @@ export default function Home() {
 
         {/* skills */}
         <section className='grid bg-stone-200 text-black/80'>
-          <div className='grid content-start gap-6 mx-auto px-5 pt-14 pb-10 w-full max-w-screen-lg md:grid-cols-2 md:items-center md:pt-10 lg:grid-cols-[1.2fr,1fr]'>
+          <div className='grid content-start gap-6 mx-auto px-5 py-16 w-full max-w-screen-lg md:grid-cols-2 md:items-center md:pt-10 lg:grid-cols-[1.2fr,1fr]'>
             <div className='grid content-start gap-6 lg:gap-8'>
               <h2 className='font-light text-4xl tracking-wide md:text-5xl'>
                 Skills
@@ -84,7 +87,7 @@ export default function Home() {
             <img 
               src='img/astronaut.svg'
               alt='an astronaut reading naugthy alien (oc) smutfics on the moon for extra immersion'
-              className='mt-6 justify-self-center drop-shadow-lg w-3/4 max-w-[250px] md:-order-1 md:mt-0 md:w-10/12 md:max-w-[280px] lg:max-w-[320px]'
+              className='justify-self-center pt-10 w-3/4 max-w-[250px] drop-shadow-lg md:-order-1 md:pt-0 md:w-10/12 md:max-w-[280px] lg:max-w-[320px]'
             />
           </div>
         </section>
@@ -100,12 +103,12 @@ export default function Home() {
             />
           </div>
 
-          <div className='grid content-start mx-auto gap-6 px-5 py-10 w-full max-w-screen-lg md:gap-8 md:py-16 lg:gap-10 lg:py-20'>
+          <div className='grid content-start mx-auto gap-6 px-5 py-12 w-full max-w-screen-lg md:gap-8 md:py-16 lg:gap-10 lg:py-20'>
             <h2 className='font-light text-4xl tracking-wide md:text-5xl'>
               Projects
             </h2>
 
-            <div className='grid content-start gap-3 md:gap-5 lg:gap-7'>
+            <div className='grid content-start gap-4 md:gap-5 lg:gap-7'>
               <h3 className='font-extralight text-3xl lg:text-4xl'>
                 Personal Works
               </h3>
@@ -253,7 +256,7 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className='grid content-start gap-3 mt-8 md:gap-5 lg:gap-7'>
+            <div className='grid content-start gap-4 mt-6 md:gap-5 lg:gap-7'>
               <div className='grid content-start'>
                 <h3 className='font-extralight text-3xl lg:text-4xl'>
                   Sites I&apos;ve worked on,
