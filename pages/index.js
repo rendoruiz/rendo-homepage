@@ -159,10 +159,10 @@ export default function Home() {
                       &quot;A list web app simplified for your convenience.&quot;
                     </p>
                     <p>
-                      This app is my second finished project using Create React App and Tailwind CSS. The app takes inspiration from MS Todo for its design and layout; the Windows version for desktop and the Android version for mobile.
+                      This web app is my second finished project using Create React App and Tailwind CSS. The app takes inspiration from MS Todo for its design and layout; the Windows version for desktop and the Android version for mobile.
                     </p>
                     <p>
-                      This app is my first installable Progressive Web App (PWA) project. The app fully works offline and also comes with a fancy introductory page.
+                      This web app is my first installable Progressive Web App (PWA) project. The app fully works offline and also comes with a fancy introductory page.
                     </p>
                     <p>
                       User data is stored locally on local storage and is encrypted using CryptoJS.
@@ -195,16 +195,16 @@ export default function Home() {
                       &quot;Browse Hacker News with Reddit&apos;s design and layout.&quot;
                     </p>
                     <p>
-                      My second attempt on a Hacker News viewer and the goal this time is to faithfully mimic Reddit&apos;s looks even further for both mobile and desktop breakpoints.
+                      This web app is my second attempt at a Hacker News viewer. The goal this time is to faithfully mimic Reddit's looks even further for both mobile and desktop breakpoints.
                     </p>
                     <p>
                       This project is the first one I have finished using Next.js together with whole other libraries.
                     </p>
                     <p>
-                      It is also my first project that has a dark mode switch built in.
+                      It is also my first project that has a dark mode switch built-in.
                     </p>
                     <p>
-                      However, it is not as performant as my first attempt when ran on Firefox and potentially WebKit-based browsers too.
+                      However, the web app is not as performant as my first attempt when running on Firefox and potentially WebKit-based browsers.
                     </p>
                   </div>
 
