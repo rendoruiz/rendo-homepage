@@ -23,6 +23,7 @@ export default function Home() {
 
       <header className='flex justify-between items-center mx-auto px-5 pt-5 pb-2 w-full max-w-screen-lg lg:px-9 lg:pt-7'>
         <div className='flex items-center select-none pointer-events-none'>
+          <h1 className='hidden'>Rendo - Home</h1>
           <img 
             src='img/logo.svg'
             alt='site logo'
