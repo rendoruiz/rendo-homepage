@@ -51,6 +51,7 @@ const Form = () => {
         .post('/', postObject, requestHeader)
         .then(() => {
           setIsFormSuccess(true);
+          resetForm();
         })
         .catch(() => {
           setIsFormFailed(true)
@@ -74,6 +75,13 @@ const Form = () => {
     } else {
       setIsCaptchaPopupOpen(true);
     }
+  }
+
+  const resetForm = () => {
+    setName('');
+    setEmail('');
+    setMessage('');
+    setShowInvalidatedInputs(false);
   }
 
   React.useEffect(() => {
@@ -195,7 +203,7 @@ const Form = () => {
             required
             minLength={nameMinLength}
             autoComplete='off'
-            className='peer border-2 border-stone-200 rounded-lg px-4 py-2 bg-transparent placeholder:opacity-50 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-stone-200/50 focus:bg-stone-800'
+            className='peer border-2 border-stone-200 rounded-lg px-4 py-2 bg-transparent placeholder:opacity-60 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-stone-200/50 focus:bg-stone-800 focus:placeholder:opacity-0'
             value={name}
             onChange={handleNameChange}
           />
@@ -218,7 +226,7 @@ const Form = () => {
             required
             minLength={emailMinLength}
             placeholder='dog@space.email'
-            className='peer border-2 border-stone-200 rounded-lg px-4 py-2 bg-transparent placeholder:opacity-40 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-stone-200/50 focus:bg-stone-800'
+            className='peer border-2 border-stone-200 rounded-lg px-4 py-2 bg-transparent placeholder:opacity-60 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-stone-200/50 focus:bg-stone-800 focus:placeholder:opacity-0'
             value={email}
             onChange={handleEmailChange}
           />
@@ -240,7 +248,7 @@ const Form = () => {
             required
             minLength={messageMinLength}
             placeholder="I'm a cat, too, by the way, just like you. UwU"
-            className='peer border-2 border-stone-200 rounded-lg px-4 py-2 bg-transparent min-h-[7.5rem] max-h-60 placeholder:opacity-40 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-stone-200/50 focus:bg-stone-800'
+            className='peer border-2 border-stone-200 rounded-lg px-4 py-2 bg-transparent min-h-[7.5rem] max-h-60 placeholder:opacity-60 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-stone-200/50 focus:bg-stone-800 focus:placeholder:opacity-0'
             value={message}
             onChange={handleMessageChange}
           />
