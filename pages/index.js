@@ -59,8 +59,8 @@ export default function Home() {
 
       <main className='grid content-start'>
         {/* hero */}
-        <section className='grid min-h-[80vh]'>
-          <div className='grid content-center mx-auto px-5 py-16 w-full max-w-screen-lg text-center md:grid-cols-2 md:items-center md:text-left lg:grid-cols-[1fr,1.25fr]'>
+        <section className='grid min-h-[80vh] md:min-h-0'>
+          <div className='grid content-center mx-auto px-5 py-16 w-full max-w-screen-lg text-center md:grid-cols-2 md:items-center md:py-20 md:text-left lg:grid-cols-[1fr,1.25fr] lg:py-40'>
             <div className='grid content-center md:justify-self-center'>
               <p className='font-extralight text-7xl md:tracking-wide lg:font-normal lg:text-8xl'>
                 Hello!
@@ -76,7 +76,7 @@ export default function Home() {
             <img  
               src='img/space.svg'
               alt='space stuff chilling (literally lmao) on space'
-              className='justify-self-center pt-16 w-10/12 max-w-[20rem] md:pt-4 md:max-w-[21.875rem] lg:max-w-[25rem]'
+              className='justify-self-center pt-16 w-10/12 max-w-[20rem] min-h-[17.5rem] bp360:min-h-[20.625rem] md:pt-4 md:max-w-[21.875rem] md:min-h-[20rem] lg:max-w-[25rem] lg:min-h-[25rem]'
             />
           </div>
 
@@ -85,7 +85,7 @@ export default function Home() {
             <img 
               aria-hidden='true'
               src='img/moon-curve.svg' 
-              className='w-full rotate-180 moon-glow'
+              className='w-full max-h-[10rem] rotate-180 moon-glow'
             />
           </div>
         </section>
@@ -120,7 +120,7 @@ export default function Home() {
             <img 
               src='img/astronaut.svg'
               alt='an astronaut reading naugthy alien (oc) smutfics on the moon for extra immersion'
-              className='justify-self-center pt-10 w-3/4 max-w-[15.625rem] drop-shadow-lg md:-order-1 md:pt-0 md:w-10/12 md:max-w-[17.5rem] lg:max-w-[20rem]'
+              className='justify-self-center pt-10 w-3/4 max-w-[15.625rem] min-h-[13.75rem] drop-shadow-lg bp360:min-h-[16.875rem] md:-order-1 md:pt-0 md:w-10/12 md:max-w-[17.5rem] md:min-h-[19.375rem] lg:max-w-[20rem] lg:min-h-[22.5rem]'
             />
           </div>
         </section>
@@ -132,7 +132,7 @@ export default function Home() {
             <img 
               aria-hidden='true'
               src='img/moon-curve.svg' 
-              className='w-full moon-glow'
+              className='w-full max-h-[10rem] moon-glow'
             />
           </div>
 
@@ -343,7 +343,7 @@ export default function Home() {
             <img
               src='img/spacecat.svg'
               alt='stranded lab cat wandering on space, thinking about its life choices (assuming it had one)'
-              className='justify-self-center w-full max-w-[20rem] md:self-center md:order-2 md:max-w-[23.75rem]'
+              className='justify-self-center w-full max-w-[20rem] min-h-[18.125rem] bp360:min-h-[22.5rem] md:self-center md:order-2 md:w-10/12 md:max-w-[23.75rem] lg:w-full lg:min-h-[26.875rem]'
             />
 
             <div className='grid content-start gap-6'>
