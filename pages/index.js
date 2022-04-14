@@ -25,6 +25,7 @@ export default function Home() {
         <div className='flex items-center select-none pointer-events-none'>
           <img 
             src='img/logo.svg'
+            alt='site logo'
             className='w-6 h-6'
           />
           <span className='ml-2 font-light text-stone-200 text-2xl tracking-wide scale-x-110 origin-left'>
