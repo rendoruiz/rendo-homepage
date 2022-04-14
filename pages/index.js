@@ -231,16 +231,16 @@ export default function Home() {
                       Readit News
                     </h4>
                     <p>
-                      My first web app project at this scale created using Create React App.
+                      This web app is my first project at this scale created using Create React App.
                     </p>
                     <p>
-                      Has support for home page, story page, and user page.
+                      The web app supports Hacker News' home page, story page, and user page.
                     </p>
                     <p>
-                      The goal for this project is to fully consume Hacker News&apos; public API that is posted on GitHub.
+                      The API used for this project is the one posted on GitHub.
                     </p>
                     <p>
-                      It tries to mimic Reddit&apos;s desktop design and layout very loosely, but still responsive enough for mobile use.
+                      It tries to mimic Reddit's desktop design and layout very loosely but is still responsive enough for mobile use.
                     </p>
                   </div>
                   
@@ -270,10 +270,10 @@ export default function Home() {
                       An old Assembly 8086 project I once created for school a project.
                     </p>
                     <p>
-                      The program starts with the home screen showing game selection menu for two games: Snake and Tic-Tac-Toe.
+                      The program starts with the home screen showing a game selection menu for two games: Snake and Tic-Tac-Toe.
                     </p>
                     <p>
-                      Made to run on emu8086 assembly emulator.
+                      The project is created and runs on an emu8086 assembly emulator.
                     </p>
                   </div>
                   
@@ -290,10 +290,10 @@ export default function Home() {
             <div className='grid content-start gap-4 mt-6 md:gap-5 lg:gap-7'>
               <div className='grid content-start'>
                 <h3 className='font-extralight text-3xl lg:text-4xl'>
-                  Sites I&apos;ve worked on,
+                  Sites I&apos;ve worked on
                 </h3>
                 <p className='mt-1 font-thin text-base leading-none tracking-widest lg:text-lg'>
-                  as the Web Developer.
+                  as a Web Developer.
                 </p>
               </div>
               
