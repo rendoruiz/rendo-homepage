@@ -126,6 +126,7 @@ const Form = () => {
         method='post'
         name='homepage-contact'
         netlify-honeypot='spacejar'
+        data-netlify-recaptcha='true'
         data-netlify='true' 
         className='grid content-start gap-4 font-light text-lg tracking-wide'
         onSubmit={handleSubmit}
