@@ -89,8 +89,14 @@ const Form = () => {
   return (  
     <>
       {(isFormSuccess || isFormFailed) && (
-        <div className='fixed z-50 inset-0 grid place-items-center px-5 py-10 bg-black/50 backdrop-blur'>
-          <div className='grid rounded-lg px-5 py-6 w-full max-w-xs bg-stone-200 text-black/80 text-center'>
+        <div 
+          className='fixed z-50 inset-0 grid place-items-center px-5 py-10 bg-black/50 backdrop-blur'
+          onClick={isFormSuccess ? handleToggleSuccess : handleToggleFailed}
+        >
+          <div 
+            className='grid rounded-lg px-5 py-6 w-full max-w-xs bg-stone-200 text-black/80 text-center'
+            onClick={(e) => e.stopPropagation()}
+          >
             {isFormSuccess && (
               <>
                 <h2 className='text-2xl'>
