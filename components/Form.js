@@ -126,7 +126,7 @@ const Form = () => {
         <div className='fixed z-50 inset-0 grid place-items-center px-5 py-10 bg-black/50 backdrop-blur'>
           <div className='grid rounded-lg px-5 py-6 w-full max-w-xs bg-stone-200 text-black/80 text-center'>
             <p className='mt-1 mb-5 font-light text-xl'>
-              Confirm that you're a non-mechanical space lifeform.
+              Confirm that you&apos;re a non-mechanical space lifeform.
             </p>
 
             <div className='relative w-full overflow-auto h-[60px] bp360:h-full'>
