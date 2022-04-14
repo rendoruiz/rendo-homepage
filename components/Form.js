@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Reaptcha from 'reaptcha';
 
 const captchaKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 const nameMinLength = 1;
@@ -15,12 +16,14 @@ const Form = () => {
   const [name, setName] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [message, setMessage] = React.useState('');
+  const [captchaResponse, setCaptchaResponse] = React.useState(null);
   const [isNameValid, setIsNameValid] = React.useState(false);
   const [isEmailValid, setIsEmailValid] = React.useState(false);
   const [isMessageValid, setIsMessageValid] = React.useState(false);
   const [showInvalidatedInputs, setShowInvalidatedInputs] = React.useState(false);
-  const [isFormSuccess, setIsFormSuccess] = React.useState(true);
+  const [isFormSuccess, setIsFormSuccess] = React.useState(false);
   const [isFormFailed, setIsFormFailed] = React.useState(false);
+  const captchaRef = React.useRef();
   
   const handleNameChange = (e) => setName(e.target.value);
   const handleEmailChange = (e) => setEmail(e.target.value);
@@ -28,10 +31,13 @@ const Form = () => {
   const handleToggleSuccess = () => setIsFormSuccess(!isFormSuccess);
   const handleToggleFailed = () => setIsFormFailed(!isFormFailed);
 
+  const handleCaptchaVerified = (token) => setCaptchaResponse(token);
+  const hanldeCaptchaError = () => setCaptchaResponse(null);
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!isNameValid || !isEmailValid || !isMessageValid) {
+    if (!isNameValid || !isEmailValid || !isMessageValid || !captchaResponse) {
       setShowInvalidatedInputs(true);
     } else {
 
@@ -167,10 +173,21 @@ const Form = () => {
           </p>
         </div>
 
-        <div>
-          <label>
-
-          </label>
+        <div className='grid gap-1'>
+          <div>
+            <Reaptcha
+              sitekey={captchaKey}
+              ref={captchaRef}
+              onVerify={handleCaptchaVerified}
+              onError={hanldeCaptchaError}
+            />
+          </div>
+          <p className={
+            'ml-1 text-sm text-red-400 max-h-0 overflow-hidden transition-all duration-200 ease-out ' +
+            ((!captchaResponse && showInvalidatedInputs) ? 'max-h-[3rem]' : '')
+          }>
+            No robots allowed, only living organisms.
+          </p>
         </div>
 
         <button
