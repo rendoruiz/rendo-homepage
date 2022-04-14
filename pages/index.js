@@ -234,10 +234,7 @@ export default function Home() {
                       This web app is my first project at this scale created using Create React App.
                     </p>
                     <p>
-                      The web app supports Hacker News&apos; home page, story page, and user page.
-                    </p>
-                    <p>
-                      The API used for this project is the one posted on GitHub.
+                      The web app supports Hacker News&apos; home page, story page, and user page. It uses the Hacker News API posted on GitHub.
                     </p>
                     <p>
                       It tries to mimic Reddit&apos;s desktop design and layout very loosely but is still responsive enough for mobile use.
