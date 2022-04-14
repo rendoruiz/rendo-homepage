@@ -149,12 +149,13 @@ const Form = () => {
             </p>
 
             <div className='relative w-full overflow-auto h-[60px] bp400:h-full'>
-              <div className='absolute scale-75 origin-top-left bp400:static bp400:scale-100'>
+              <div className='absolute bp360:static'>
                 <Reaptcha
                   sitekey={captchaKey}
                   ref={captchaRef}
                   onVerify={handleCaptchaVerified}
                   onError={handleCaptchaError}
+                  className='scale-75 origin-top-left bp360:scale-90 bp400:scale-100'
                 />
               </div>
             </div>
