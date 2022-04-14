@@ -35,10 +35,8 @@ const Form = () => {
   const handleToggleFailed = () => setIsFormFailed(!isFormFailed);
 
   const handleCaptchaVerified = (token) => {
-    setIsCaptchaPopupOpen(false);
-    setCaptchaResponse(token);
-
     if (captchaResponse) {
+      setCaptchaResponse(token);
       const postObject = encodeData({
         "form-name": "homepage-contact",
         "name": name,
@@ -52,11 +50,13 @@ const Form = () => {
         .post('/', postObject, requestHeader)
         .then(() => setIsFormSuccess(true))
         .catch(() => setIsFormFailed(true));
+
+      setIsCaptchaPopupOpen(false);
     }
   }
   const handleCaptchaError = () => {
-    setIsCaptchaPopupOpen(false);
     setCaptchaResponse(null);
+    setIsCaptchaPopupOpen(false);
   }
 
   const handleSubmit = (e) => {
@@ -87,7 +87,7 @@ const Form = () => {
             {isFormSuccess && (
               <>
                 <h2 className='text-2xl'>
-                  Message signals sent
+                  Galactic signals sent
                 </h2>
                 <p className='mt-1 mb-5 font-light text-xl'>
                   It might take a while to get into my space mailbox.
