@@ -1,4 +1,6 @@
 import * as React from 'react';
+
+import axios from 'axios';
 import Reaptcha from 'reaptcha';
 
 const captchaKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
@@ -33,6 +35,11 @@ const Form = () => {
 
   const handleCaptchaVerified = (token) => setCaptchaResponse(token);
   const hanldeCaptchaError = () => setCaptchaResponse(null);
+  const handleCaptchaRefresh = (e) => {
+    e.preventDefault();
+    captchaRef.current.reset();
+    setCaptchaResponse(null);
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -40,18 +47,28 @@ const Form = () => {
     if (!isNameValid || !isEmailValid || !isMessageValid || !captchaResponse) {
       setShowInvalidatedInputs(true);
     } else {
+      const postObject = encodeData({
+        "form-name": "homepage-contact",
+        "name": name,
+        "email": email,
+        "message": message,
+        "g-recaptcha-response": captchaResponse,
+      });
 
+      const requestHeader = { header: { "Content-Type": "application/x-www-form-urlencoded" } };
+      axios
+        .post('/', postObject, requestHeader)
+        .then(() => setIsFormSuccess(true))
+        .catch(() => setIsFormFailed(true));
     }
   }
 
   React.useEffect(() => {
     setIsNameValid(name.length >= nameMinLength ? true : false);
   }, [name]);
-
   React.useEffect(() => {
     setIsEmailValid((email.length >= emailMinLength && email.includes('@')) && email.includes('.') ? true : false);
   }, [email]);
-
   React.useEffect(() => {
     setIsMessageValid(message.length >= messageMinLength ? true : false);
   }, [message]);
@@ -101,9 +118,26 @@ const Form = () => {
 
       <form 
         method='post'
+        name='homepage-contact'
+        netlify-honeypot='spacejar'
+        data-netlify='true' 
         className='grid content-start gap-4 font-light text-lg tracking-wide'
         onSubmit={handleSubmit}
       >
+        <input 
+          type='hidden' 
+          name='form-name'
+          value='homepage-contact'
+        />
+
+        {/* honeypot */}
+        <label className='hidden'>
+          <input 
+            type='text' 
+            name='spacejar' 
+          />
+        </label>
+
         <div className='grid gap-1'>
           <label htmlFor='contact-name'>
             Galactic identity
@@ -174,6 +208,21 @@ const Form = () => {
         </div>
 
         <div className='grid gap-1'>
+          <div className='grid grid-flow-col justify-start items-center gap-2'>
+            Captcha
+            <button 
+              type='button'
+              title='refresh captcha'
+              className='opacity-70 hover:opacity-100'
+              onClick={handleCaptchaRefresh}
+            >
+              <img 
+                src='img/icon-refresh.svg' 
+                alt='refresh icon'
+                className='w-[17px] h-[17px]'
+              />
+            </button>
+          </div>
           <div>
             <Reaptcha
               sitekey={captchaKey}

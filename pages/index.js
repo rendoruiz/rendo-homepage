@@ -34,7 +34,7 @@ export default function Home() {
         <div className='grid grid-flow-col gap-6'>
           <a 
             href='https://www.linkedin.com/in/rendo-ruiz'
-            className='opacity-50 hover:opacity-90'
+            className='opacity-50 transition-opacity hover:opacity-90'
           >
             <img 
               src='img/icon-li.svg' 
@@ -44,7 +44,7 @@ export default function Home() {
           </a>
           <a 
             href='https://github.com/rendoruiz'
-            className='opacity-50 hover:opacity-90'
+            className='opacity-50 transition-opacity hover:opacity-90'
           >
             <img 
               src='img/icon-gh.svg' 
