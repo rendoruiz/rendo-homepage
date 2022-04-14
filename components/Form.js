@@ -52,14 +52,20 @@ const Form = () => {
         "name": name,
         "email": email,
         "message": message,
-        "g-recaptcha-response": captchaResponse,
+        "g-recaptcha-response": captchaResponse
       });
 
       const requestHeader = { header: { "Content-Type": "application/x-www-form-urlencoded" } };
       axios
         .post('/', postObject, requestHeader)
-        .then(() => setIsFormSuccess(true))
-        .catch(() => setIsFormFailed(true));
+        .then((e) => {
+          console.info({e});
+          setIsFormSuccess(true)
+        })
+        .catch((e) => {
+          console.info({e});
+          setIsFormFailed(true)
+        });
     }
   }
 
