@@ -183,8 +183,8 @@ const Form = () => {
             onChange={handleNameChange}
           />
           <p className={
-            'ml-1 text-sm text-red-400 max-h-0 overflow-hidden transition-all duration-200 ease-out ' +
-            ((!isNameValid || (!isNameValid && showInvalidatedInputs)) ? 'peer-focus:max-h-[3rem]' : '')
+            'ml-1 text-sm text-red-400 max-h-0 overflow-hidden transition-all duration-200 ease-out peer-focus:invalid:max-h-[2.5rem] ' +
+            ((!isNameValid && showInvalidatedInputs) ? 'max-h-[2.5rem]' : '')
           }>
             An identity is required
           </p>
@@ -206,8 +206,8 @@ const Form = () => {
             onChange={handleEmailChange}
           />
           <p className={
-            'ml-1 text-sm text-red-400 max-h-0 overflow-hidden transition-all duration-200 ease-out ' +
-            ((!isEmailValid || (!isEmailValid && showInvalidatedInputs)) ? 'peer-focus:max-h-[3rem]' : '')
+            'ml-1 text-sm text-red-400 max-h-0 overflow-hidden transition-all duration-200 ease-out peer-focus:invalid:max-h-[2.5rem] ' +
+            ((!isEmailValid && showInvalidatedInputs) ? 'max-h-[2.5rem]' : '')
           }>
             A e-mail address is required
           </p>
@@ -228,8 +228,8 @@ const Form = () => {
             onChange={handleMessageChange}
           />
           <p className={
-            'ml-1 text-sm text-red-400 max-h-0 overflow-hidden transition-all duration-200 ease-out ' +
-            ((!isMessageValid || (!isMessageValid && showInvalidatedInputs)) ? 'peer-focus:max-h-[3rem]' : '')
+            'ml-1 text-sm text-red-400 max-h-0 overflow-hidden transition-all duration-200 ease-out peer-focus:invalid:max-h-[2.5rem] ' +
+            ((!isMessageValid && showInvalidatedInputs) ? 'peer-focus:max-h-[2.5rem]' : '')
           }>
             A message is required
           </p>
