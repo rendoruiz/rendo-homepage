@@ -74,7 +74,7 @@ export default function Home() {
             <img  
               src='img/space.svg'
               alt='space stuff chilling (literally lmao) on space'
-              className='justify-self-center pt-16 w-10/12 max-w-[320px] md:pt-4 md:max-w-[350px] lg:max-w-[400px]'
+              className='justify-self-center pt-16 w-10/12 max-w-[20rem] md:pt-4 md:max-w-[21.875rem] lg:max-w-[25rem]'
             />
           </div>
 
@@ -118,7 +118,7 @@ export default function Home() {
             <img 
               src='img/astronaut.svg'
               alt='an astronaut reading naugthy alien (oc) smutfics on the moon for extra immersion'
-              className='justify-self-center pt-10 w-3/4 max-w-[250px] drop-shadow-lg md:-order-1 md:pt-0 md:w-10/12 md:max-w-[280px] lg:max-w-[320px]'
+              className='justify-self-center pt-10 w-3/4 max-w-[15.625rem] drop-shadow-lg md:-order-1 md:pt-0 md:w-10/12 md:max-w-[17.5rem] lg:max-w-[20rem]'
             />
           </div>
         </section>
@@ -341,7 +341,7 @@ export default function Home() {
             <img
               src='img/spacecat.svg'
               alt='stranded lab cat wandering on space, thinking about its life choices (assuming it had one)'
-              className='justify-self-center w-full max-w-[320px] md:self-center md:order-2 md:max-w-[380px]'
+              className='justify-self-center w-full max-w-[20rem] md:self-center md:order-2 md:max-w-[23.75rem]'
             />
 
             <div className='grid content-start gap-6'>

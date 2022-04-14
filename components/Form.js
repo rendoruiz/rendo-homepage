@@ -141,24 +141,21 @@ const Form = () => {
           onClick={handleToggleCaptchaPopup}
         >
           <div 
-            className='grid justify-items-center rounded-lg px-5 py-6 w-full max-w-[350px] bg-stone-200 text-black/80 text-center'
+            className='grid justify-items-center rounded-lg px-5 py-6 w-full max-w-xs bg-stone-200 text-black/80 text-center'
             onClick={(e) => e.stopPropagation()}
           >
             <p className='mt-1 mb-5 font-light text-xl'>
               Confirm that you&apos;re a non-mechanical space lifeform.
             </p>
 
-            <div className='grid'>
-              <Reaptcha
-                sitekey={captchaKey}
-                ref={captchaRef}
-                onVerify={handleCaptchaVerified}
-                onError={handleCaptchaError}
-                size='compact'
-                className='h-20 overflow-hidden'
-              />
-              <div className='shadow-md'></div>
-            </div>
+            <Reaptcha
+              sitekey={captchaKey}
+              ref={captchaRef}
+              onVerify={handleCaptchaVerified}
+              onError={handleCaptchaError}
+              size='compact'
+              className='h-[4.625rem] overflow-hidden'
+            />
           </div>
         </div>
       )}
@@ -243,7 +240,7 @@ const Form = () => {
             required
             minLength={messageMinLength}
             placeholder="I'm a cat, too, by the way, just like you. UwU"
-            className='peer border-2 border-stone-200 rounded-lg px-4 py-2 bg-transparent min-h-[120px] max-h-60 placeholder:opacity-40 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-stone-200/50 focus:bg-stone-800'
+            className='peer border-2 border-stone-200 rounded-lg px-4 py-2 bg-transparent min-h-[7.5rem] max-h-60 placeholder:opacity-40 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-stone-200/50 focus:bg-stone-800'
             value={message}
             onChange={handleMessageChange}
           />
