@@ -148,17 +148,13 @@ const Form = () => {
               Confirm that you&apos;re a non-mechanical space lifeform.
             </p>
 
-            <div className='relative w-full overflow-auto h-[60px] bp400:h-full'>
-              <div className='absolute bp360:static'>
-                <Reaptcha
-                  sitekey={captchaKey}
-                  ref={captchaRef}
-                  onVerify={handleCaptchaVerified}
-                  onError={handleCaptchaError}
-                  className='scale-75 origin-top-left bp360:scale-90 bp400:scale-100'
-                />
-              </div>
-            </div>
+            <Reaptcha
+              sitekey={captchaKey}
+              ref={captchaRef}
+              onVerify={handleCaptchaVerified}
+              onError={handleCaptchaError}
+              size='compact'
+            />
           </div>
         </div>
       )}
