@@ -195,7 +195,7 @@ export default function Home() {
                       &quot;Browse Hacker News with Reddit&apos;s design and layout.&quot;
                     </p>
                     <p>
-                      This web app is my second attempt at a Hacker News viewer. The goal this time is to faithfully mimic Reddit's looks even further for both mobile and desktop breakpoints.
+                      This web app is my second attempt at a Hacker News viewer. The goal this time is to faithfully mimic Reddit&apos;s looks even further for both mobile and desktop breakpoints.
                     </p>
                     <p>
                       This project is the first one I have finished using Next.js together with whole other libraries.
@@ -234,13 +234,13 @@ export default function Home() {
                       This web app is my first project at this scale created using Create React App.
                     </p>
                     <p>
-                      The web app supports Hacker News' home page, story page, and user page.
+                      The web app supports Hacker News&apos; home page, story page, and user page.
                     </p>
                     <p>
                       The API used for this project is the one posted on GitHub.
                     </p>
                     <p>
-                      It tries to mimic Reddit's desktop design and layout very loosely but is still responsive enough for mobile use.
+                      It tries to mimic Reddit&apos;s desktop design and layout very loosely but is still responsive enough for mobile use.
                     </p>
                   </div>
                   
