@@ -32,6 +32,7 @@ const Form = () => {
   const handleMessageChange = (e) => setMessage(e.target.value);
   const handleToggleSuccess = () => setIsFormSuccess(!isFormSuccess);
   const handleToggleFailed = () => setIsFormFailed(!isFormFailed);
+  const handleToggleCaptchaPopup = () => setIsCaptchaPopupOpen(!isCaptchaPopupOpen);
 
   const handleCaptchaVerified = (token) => {
     const captchaResponse = token;
@@ -48,10 +49,15 @@ const Form = () => {
       const requestHeader = { header: { "Content-Type": "application/x-www-form-urlencoded" } };
       axios
         .post('/', postObject, requestHeader)
-        .then(() => setIsFormSuccess(true))
-        .catch(() => setIsFormFailed(true));
-
-      setIsCaptchaPopupOpen(false);
+        .then(() => {
+          setIsFormSuccess(true);
+        })
+        .catch(() => {
+          setIsFormFailed(true)
+        })
+        .then(() => {
+          setIsCaptchaPopupOpen(false);
+        });
     } else {
       setIsFormFailed(true);
     }
@@ -124,13 +130,19 @@ const Form = () => {
       )}
 
       {isCaptchaPopupOpen && (
-        <div className='fixed z-50 inset-0 grid place-items-center px-5 py-10 bg-black/50 backdrop-blur'>
-          <div className='grid rounded-lg px-5 py-6 w-full max-w-xs bg-stone-200 text-black/80 text-center'>
+        <div 
+          className='fixed z-50 inset-0 grid place-items-center px-5 py-10 bg-black/50 backdrop-blur'
+          onClick={handleToggleCaptchaPopup}
+        >
+          <div 
+            className='grid justify-center rounded-lg px-5 py-6 bg-stone-200 text-black/80 text-center'
+            onClick={(e) => e.stopPropagation()}
+          >
             <p className='mt-1 mb-5 font-light text-xl'>
               Confirm that you&apos;re a non-mechanical space lifeform.
             </p>
 
-            <div className='relative w-full overflow-auto h-[60px] bp360:h-full'>
+            <div className='relative overflow-auto h-[60px] bp360:h-full'>
               <div className='absolute scale-75 origin-top-left bp360:static bp360:scale-100'>
                 <Reaptcha
                   sitekey={captchaKey}
