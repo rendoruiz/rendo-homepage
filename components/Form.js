@@ -162,7 +162,7 @@ const Form = () => {
               onVerify={handleCaptchaVerified}
               onError={handleCaptchaError}
               size='compact'
-              className='h-[4.625rem] overflow-hidden'
+              className='h-20 overflow-hidden'
             />
           </div>
         </div>
