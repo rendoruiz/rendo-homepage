@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
-   sodipodi:docname="og-image.svg"
+   sodipodi:docname="og-image-is.svg"
    inkscape:export-filename="C:\Users\recon\Desktop\og-image.png"
    inkscape:export-xdpi="25.4"
    inkscape:export-ydpi="25.4"
@@ -26,15 +26,15 @@
      inkscape:pagecheckerboard="1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="0.27937314"
-     inkscape:cx="1990.1698"
-     inkscape:cy="1612.5387"
+     inkscape:zoom="0.19754664"
+     inkscape:cx="2009.652"
+     inkscape:cy="1693.271"
      inkscape:window-width="1682"
      inkscape:window-height="1178"
-     inkscape:window-x="5177"
-     inkscape:window-y="305"
+     inkscape:window-x="1840"
+     inkscape:window-y="652"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="g1622" />
   <defs
      id="defs2">
     <rect
@@ -51,19 +51,19 @@
     <g
        id="g1622">
       <rect
-         style="font-variation-settings:'wght' 700;opacity:1;fill:#000000;fill-opacity:1;stroke:#e7e5e4;stroke-width:0"
-         id="rect950"
-         width="1200"
-         height="630"
-         x="8.9702252e-07"
-         y="8.9702252e-07" />
-      <rect
-         style="font-variation-settings:'wght' 700;display:inline;opacity:0.25;fill:#4c1d95;fill-opacity:0.25;stroke:#e7e5e4;stroke-width:0"
+         style="font-variation-settings:'wght' 700;display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke:#e7e5e4;stroke-width:0"
          id="rect846"
          width="1200"
          height="630"
          x="4.9999994e-07"
          y="5e-07" />
+      <rect
+         style="font-variation-settings:'wght' 700;display:inline;opacity:0.250415;fill:#4c1d95;fill-opacity:1;stroke:#e7e5e4;stroke-width:0"
+         id="rect950"
+         width="1200"
+         height="630"
+         x="8.9702252e-07"
+         y="8.9702252e-07" />
     </g>
     <g
        id="g10014"
