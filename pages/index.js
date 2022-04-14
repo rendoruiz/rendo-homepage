@@ -337,11 +337,11 @@ export default function Home() {
 
         {/* contact */}
         <section className='relative grid'>
-          <div className='relative grid gap-6 content-start mx-auto px-5 py-10 w-full max-w-screen-lg md:grid-cols-2 md:pb-16 lg:grid-cols-[1fr,1.2fr] lg:gap-8'>
+          <div className='relative grid gap-16 content-start mx-auto px-5 py-10 w-full max-w-screen-lg md:grid-cols-2 md:gap-6 md:pb-16 lg:grid-cols-[1fr,1.2fr] lg:gap-8'>
             <img
               src='img/spacecat.svg'
               alt='stranded lab cat wandering on space, thinking about its life choices (assuming it had one)'
-              className='justify-self-center w-full max-w-[320px] md:self-center md:order-2 md:max-w-[350px]'
+              className='justify-self-center w-full max-w-[320px] md:self-center md:order-2 md:max-w-[380px]'
             />
 
             <div className='grid content-start gap-6'>

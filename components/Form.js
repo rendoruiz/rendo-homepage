@@ -230,13 +230,15 @@ const Form = () => {
               />
             </button>
           </div>
-          <div>
-            <Reaptcha
-              sitekey={captchaKey}
-              ref={captchaRef}
-              onVerify={handleCaptchaVerified}
-              onError={hanldeCaptchaError}
-            />
+          <div className='relative w-full overflow-auto h-[60px] bp360:h-full'>
+            <div className='absolute scale-75 origin-top-left bp360:static bp360:scale-100'>
+              <Reaptcha
+                sitekey={captchaKey}
+                ref={captchaRef}
+                onVerify={handleCaptchaVerified}
+                onError={hanldeCaptchaError}
+              />
+            </div>
           </div>
           <p className={
             'ml-1 text-sm text-red-400 max-h-0 overflow-hidden transition-all duration-200 ease-out ' +
