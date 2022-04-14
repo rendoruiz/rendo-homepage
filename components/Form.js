@@ -25,6 +25,7 @@ const Form = () => {
   const [showInvalidatedInputs, setShowInvalidatedInputs] = React.useState(false);
   const [isFormSuccess, setIsFormSuccess] = React.useState(false);
   const [isFormFailed, setIsFormFailed] = React.useState(false);
+  const [isCaptchaPopupOpen, setIsCaptchaPopupOpen] = React.useState(false);
   const captchaRef = React.useRef();
   
   const handleNameChange = (e) => setName(e.target.value);
@@ -33,20 +34,11 @@ const Form = () => {
   const handleToggleSuccess = () => setIsFormSuccess(!isFormSuccess);
   const handleToggleFailed = () => setIsFormFailed(!isFormFailed);
 
-  const handleCaptchaVerified = (token) => setCaptchaResponse(token);
-  const hanldeCaptchaError = () => setCaptchaResponse(null);
-  const handleCaptchaRefresh = (e) => {
-    e.preventDefault();
-    captchaRef.current.reset();
-    setCaptchaResponse(null);
-  }
+  const handleCaptchaVerified = (token) => {
+    setIsCaptchaPopupOpen(false);
+    setCaptchaResponse(token);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (!isNameValid || !isEmailValid || !isMessageValid || !captchaResponse) {
-      setShowInvalidatedInputs(true);
-    } else {
+    if (captchaResponse) {
       const postObject = encodeData({
         "form-name": "homepage-contact",
         "name": name,
@@ -58,14 +50,22 @@ const Form = () => {
       const requestHeader = { header: { "Content-Type": "application/x-www-form-urlencoded" } };
       axios
         .post('/', postObject, requestHeader)
-        .then((e) => {
-          console.info({e});
-          setIsFormSuccess(true)
-        })
-        .catch((e) => {
-          console.info({e});
-          setIsFormFailed(true)
-        });
+        .then(() => setIsFormSuccess(true))
+        .catch(() => setIsFormFailed(true));
+    }
+  }
+  const handleCaptchaError = () => {
+    setIsCaptchaPopupOpen(false);
+    setCaptchaResponse(null);
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!isNameValid || !isEmailValid || !isMessageValid) {
+      setShowInvalidatedInputs(true);
+    } else {
+      setIsCaptchaPopupOpen(true);
     }
   }
 
@@ -118,6 +118,27 @@ const Form = () => {
                 </button>
               </>
             )}
+          </div>
+        </div>
+      )}
+
+      {isCaptchaPopupOpen && (
+        <div className='fixed z-50 inset-0 grid place-items-center px-5 py-10 bg-black/50 backdrop-blur'>
+          <div className='grid rounded-lg px-5 py-6 w-full max-w-xs bg-stone-200 text-black/80 text-center'>
+            <p className='mt-1 mb-5 font-light text-xl'>
+              Confirm that you're a biological space lifeform.
+            </p>
+
+            <div className='relative w-full overflow-auto h-[60px] bp360:h-full'>
+              <div className='absolute scale-75 origin-top-left bp360:static bp360:scale-100'>
+                <Reaptcha
+                  sitekey={captchaKey}
+                  ref={captchaRef}
+                  onVerify={handleCaptchaVerified}
+                  onError={handleCaptchaError}
+                />
+              </div>
+            </div>
           </div>
         </div>
       )}
@@ -211,40 +232,6 @@ const Form = () => {
             ((!isMessageValid || (!isMessageValid && showInvalidatedInputs)) ? 'peer-focus:max-h-[3rem]' : '')
           }>
             A message is required
-          </p>
-        </div>
-
-        <div className='grid gap-1'>
-          <div className='grid grid-flow-col justify-start items-center gap-2'>
-            Captcha
-            <button 
-              type='button'
-              title='refresh captcha'
-              className='opacity-70 hover:opacity-100'
-              onClick={handleCaptchaRefresh}
-            >
-              <img 
-                src='img/icon-refresh.svg' 
-                alt='refresh icon'
-                className='w-[17px] h-[17px]'
-              />
-            </button>
-          </div>
-          <div className='relative w-full overflow-auto h-[60px] bp360:h-full'>
-            <div className='absolute scale-75 origin-top-left bp360:static bp360:scale-100'>
-              <Reaptcha
-                sitekey={captchaKey}
-                ref={captchaRef}
-                onVerify={handleCaptchaVerified}
-                onError={hanldeCaptchaError}
-              />
-            </div>
-          </div>
-          <p className={
-            'ml-1 text-sm text-red-400 max-h-0 overflow-hidden transition-all duration-200 ease-out ' +
-            ((!captchaResponse && showInvalidatedInputs) ? 'max-h-[3rem]' : '')
-          }>
-            No robots allowed, only living organisms.
           </p>
         </div>
 
