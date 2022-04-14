@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Form from '../components/Form'
 import LinkButton from '../components/LinkButton'
 import ProjectImage from '../components/ProjectImage'
 
@@ -338,16 +339,20 @@ export default function Home() {
         </section>
 
         {/* contact */}
-        <section className='relative grid before:absolute before:inset-0 before:bg-cs1 before:bg-no-repeat before:bg-center before:bg-contain before:opacity-10'>
-          <div className='relative grid gap-10 content-start mx-auto px-5 py-10 w-full max-w-screen-lg'>
+        <section className='relative grid'>
+          <div className='relative grid gap-6 content-start mx-auto px-5 py-10 w-full max-w-screen-lg md:grid-cols-2 md:pb-16 lg:grid-cols-[1fr,1.2fr] lg:gap-8'>
             <img
               src='img/spacecat.svg'
               alt='stranded lab cat wandering on space, thinking about its life choices (assuming it had one)'
-              className='justify-self-center w-full max-w-[320px]'
+              className='justify-self-center w-full max-w-[320px] md:self-center md:order-2 md:max-w-[350px]'
             />
 
-            <div>
-              <h2 className='font-light text-4xl tracking-wide'>Contact</h2>
+            <div className='grid content-start gap-6'>
+              <h2 className='font-light text-4xl tracking-wide md:text-5xl'>
+                Contact
+              </h2>
+
+              <Form />
             </div>
           </div>
         </section>
