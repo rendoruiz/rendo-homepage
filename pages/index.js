@@ -8,11 +8,11 @@ export default function Home() {
     <div className='grid min-h-screen bg-violet-900/25 font-["Roboto"] text-white'>
       <Head>
         <title>Rendo - Home</title>
-        <meta name="description" content="A space cat, lost in space." />
+        <meta name="description" content="A space cat lost in space." />
         <link rel="icon" href="/favicon.ico" />
         
         <meta property="og:title" content="Rendo - Home" />
-        <meta property="og:description" content="A space cat, lost in space." />
+        <meta property="og:description" content="A space cat lost in space." />
         <meta property="og:url" content="https://rendo.ca/" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
