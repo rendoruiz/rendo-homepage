@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import Form from '../components/Form'
 import LinkButton from '../components/LinkButton'
 import ProjectImage from '../components/ProjectImage'
