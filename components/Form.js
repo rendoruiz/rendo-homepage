@@ -18,7 +18,6 @@ const Form = () => {
   const [name, setName] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [message, setMessage] = React.useState('');
-  const [captchaResponse, setCaptchaResponse] = React.useState(null);
   const [isNameValid, setIsNameValid] = React.useState(false);
   const [isEmailValid, setIsEmailValid] = React.useState(false);
   const [isMessageValid, setIsMessageValid] = React.useState(false);
@@ -35,8 +34,9 @@ const Form = () => {
   const handleToggleFailed = () => setIsFormFailed(!isFormFailed);
 
   const handleCaptchaVerified = (token) => {
+    const captchaResponse = token;
+
     if (captchaResponse) {
-      setCaptchaResponse(token);
       const postObject = encodeData({
         "form-name": "homepage-contact",
         "name": name,
@@ -52,11 +52,12 @@ const Form = () => {
         .catch(() => setIsFormFailed(true));
 
       setIsCaptchaPopupOpen(false);
+    } else {
+      setIsFormFailed(true);
     }
   }
   const handleCaptchaError = () => {
-    setCaptchaResponse(null);
-    setIsCaptchaPopupOpen(false);
+    setIsFormFailed(true);
   }
 
   const handleSubmit = (e) => {
