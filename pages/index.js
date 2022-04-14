@@ -159,10 +159,10 @@ export default function Home() {
                       &quot;A list web app simplified for your convenience.&quot;
                     </p>
                     <p>
-                      This is my second finished project using Create React App and Tailwind CSS. The app is made to look like MS Todo, both Windows and Android vesions, for both desktop and mobile breakpoints respectively.
+                      This app is my second finished project using Create React App and Tailwind CSS. The app takes inspiration from MS Todo for its design and layout; the Windows version for desktop and the Android version for mobile.
                     </p>
                     <p>
-                      My first project that works as an installable Progressive Web App (PWA). The app fully works offline and also comes with a fancy introductory page.
+                      This app is my first installable Progressive Web App (PWA) project. The app fully works offline and also comes with a fancy introductory page.
                     </p>
                     <p>
                       User data is stored locally on local storage and is encrypted using CryptoJS.
