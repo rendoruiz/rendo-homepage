@@ -154,6 +154,7 @@ const Form = () => {
               onVerify={handleCaptchaVerified}
               onError={handleCaptchaError}
               size='compact'
+              className='h-20 shadow-md overflow-hidden'
             />
           </div>
         </div>
