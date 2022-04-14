@@ -141,15 +141,15 @@ const Form = () => {
           onClick={handleToggleCaptchaPopup}
         >
           <div 
-            className='grid justify-center rounded-lg px-5 py-6 bg-stone-200 text-black/80 text-center'
+            className='grid justify-items-center rounded-lg px-5 py-6 w-full max-w-[350px] bg-stone-200 text-black/80 text-center'
             onClick={(e) => e.stopPropagation()}
           >
             <p className='mt-1 mb-5 font-light text-xl'>
               Confirm that you&apos;re a non-mechanical space lifeform.
             </p>
 
-            <div className='relative overflow-auto h-[60px] bp360:h-full'>
-              <div className='absolute scale-75 origin-top-left bp360:static bp360:scale-100'>
+            <div className='relative w-full overflow-auto h-[60px] bp400:h-full'>
+              <div className='absolute scale-75 origin-top-left bp400:static bp400:scale-100'>
                 <Reaptcha
                   sitekey={captchaKey}
                   ref={captchaRef}
