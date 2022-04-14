@@ -60,7 +60,7 @@ export default function Home() {
       <main className='grid content-start'>
         {/* hero */}
         <section className='grid min-h-[80vh] md:min-h-0'>
-          <div className='grid content-center mx-auto px-5 py-16 w-full max-w-screen-lg text-center md:grid-cols-2 md:items-center md:py-20 md:text-left lg:grid-cols-[1fr,1.25fr] lg:py-40'>
+          <div className='grid content-center mx-auto px-5 py-16 w-full max-w-screen-lg text-center md:grid-cols-2 md:items-center md:py-20 md:text-left lg:grid-cols-[1fr,1.25fr] lg:py-24 2xl:py-36'>
             <div className='grid content-center md:justify-self-center'>
               <p className='font-extralight text-7xl md:tracking-wide lg:font-normal lg:text-8xl'>
                 Hello!
