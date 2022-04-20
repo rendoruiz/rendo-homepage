@@ -86,6 +86,7 @@ export default function Home() {
             <img 
               aria-hidden='true'
               src='img/moon-curve.svg' 
+              alt='top moon curve'
               className='w-full max-h-[10rem] rotate-180 moon-glow'
             />
           </div>
@@ -133,6 +134,7 @@ export default function Home() {
             <img 
               aria-hidden='true'
               src='img/moon-curve.svg' 
+              alt='bottom moon curve'
               className='w-full max-h-[10rem] moon-glow'
             />
           </div>
