@@ -5,7 +5,7 @@ import LinkButton from '../components/LinkButton'
 import ProjectImage from '../components/ProjectImage'
 
 import BrandingLogoVector from '../components/Images/BrandingLogoVector'
-import LinkedInIcon from '../components/Images/Icons/LinkedinIcon'
+import LinkedInIcon from '../components/Images/Icons/LinkedInIcon'
 import GitHubIcon from '../components/Images/Icons/GitHubIcon'
 import SpaceVector from '../components/Images/SpaceVector'
 import MoonCurveVector from '../components/Images/MoonCurveVector'
@@ -23,10 +23,6 @@ export default function Home() {
         <meta property="og:title" content="Rendo - Home" />
         <meta property="og:description" content="A space cat lost in space." />
         <meta property="og:url" content="https://rendo.ca/" />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
       </Head>
 
       <header className='flex justify-between items-center mx-auto px-5 pt-6 pb-2 w-full max-w-screen-lg lg:px-9 lg:pt-8'>
