@@ -8,7 +8,7 @@ const AstronautVector = ({
     className={className}
   >
     {title && (
-      <title>{title}</title>
+      <title data-nosnippet>{title}</title>
     )}
     <path
       d="M171.96 274.274s-35.411 9.205-44.351 41.022c-8.941 31.817 56.072 136.219 56.072 136.219l252.158-98.373-58.658-140.405-205.22 61.54z"

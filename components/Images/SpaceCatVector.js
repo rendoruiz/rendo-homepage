@@ -8,7 +8,7 @@ const SpaceCatVector = ({
     className={className}
   >
     {title && (
-      <title>{title}</title>
+      <title data-nosnippet>{title}</title>
     )}
     <g transform="translate(-184.14 -140.4)">
       <path

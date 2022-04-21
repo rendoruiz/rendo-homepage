@@ -4,7 +4,7 @@ const BrandingLogoTextVector = ({ className }) => (
     viewBox="0 0 876.65 200"
     className={className}
   >
-    <title>Site extended branding logo</title>
+    <title data-nosnippet>Site extended branding logo</title>
     <g stroke="#e7e5e4" transform="translate(-2.94 -2.94) scale(11.765)">
       <rect height="16" width="16" fill="none" rx="2" x=".75" y=".75" />
       <path
