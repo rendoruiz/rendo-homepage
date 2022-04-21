@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
 import Form from '../components/Form'
+import MoonCurveVector from '../components/Images/MoonCurveVector'
 import LinkButton from '../components/LinkButton'
 import ProjectImage from '../components/ProjectImage'
 
@@ -83,12 +84,7 @@ export default function Home() {
 
           {/* moon curve */}
           <div className='self-end grid -mb-1 pt-10 overflow-hidden'>
-            <img 
-              aria-hidden='true'
-              src='img/moon-curve.svg' 
-              alt='top moon curve'
-              className='w-full max-h-[10rem] rotate-180 moon-glow'
-            />
+            <MoonCurveVector flipped />
           </div>
         </section>
 
@@ -131,12 +127,7 @@ export default function Home() {
         <section className='grid'>
           {/* moon curve */}
           <div className='self-end grid -mt-1 pb-10 overflow-hidden'>
-            <img 
-              aria-hidden='true'
-              src='img/moon-curve.svg' 
-              alt='bottom moon curve'
-              className='w-full max-h-[10rem] moon-glow'
-            />
+            <MoonCurveVector />
           </div>
 
           <div className='grid content-start mx-auto gap-6 px-5 py-12 w-full max-w-screen-lg md:gap-8 md:py-16 lg:gap-10 lg:py-20'>
