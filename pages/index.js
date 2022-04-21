@@ -1,13 +1,16 @@
 import Head from 'next/head'
 
 import Form from '../components/Form'
-import AstronautVector from '../components/Images/AstronautVector'
-import BrandingLogoVector from '../components/Images/BrandingLogoVector'
-import MoonCurveVector from '../components/Images/MoonCurveVector'
-import SpaceCatVector from '../components/Images/SpaceCatVector'
-import SpaceVector from '../components/Images/SpaceVector'
 import LinkButton from '../components/LinkButton'
 import ProjectImage from '../components/ProjectImage'
+
+import BrandingLogoVector from '../components/Images/BrandingLogoVector'
+import LinkedInIcon from '../components/Images/Icons/LinkedinIcon'
+import GitHubIcon from '../components/Images/Icons/GitHubIcon'
+import SpaceVector from '../components/Images/SpaceVector'
+import MoonCurveVector from '../components/Images/MoonCurveVector'
+import AstronautVector from '../components/Images/AstronautVector'
+import SpaceCatVector from '../components/Images/SpaceCatVector'
 
 export default function Home() {
   return (
@@ -35,23 +38,17 @@ export default function Home() {
         <div className='grid grid-flow-col gap-6'>
           <a 
             href='https://www.linkedin.com/in/rendo-ruiz'
+            title='linkedin page'
             className='opacity-50 transition-opacity hover:opacity-90'
           >
-            <img 
-              src='img/icon-li.svg' 
-              alt='linkedin page'
-              className='w-6 h-6'
-            />
+            <LinkedInIcon className='w-6 h-6' />
           </a>
           <a 
             href='https://github.com/rendoruiz'
+            title='github page'
             className='opacity-50 transition-opacity hover:opacity-90'
           >
-            <img 
-              src='img/icon-gh.svg' 
-              alt='github page'
-              className='w-6 h-6'
-            />
+            <GitHubIcon className='w-6 h-6' />
           </a>
         </div>
       </header>
