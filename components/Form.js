@@ -191,7 +191,7 @@ const Form = () => {
           />
         </label>
 
-        <div className='grid gap-1 overflow-hidden'>
+        <div className='grid gap-1'>
           <label htmlFor='contact-name'>
             Galactic identity
           </label>
@@ -208,14 +208,14 @@ const Form = () => {
             onChange={handleNameChange}
           />
           <p className={
-            'ml-1 text-sm text-red-400 overflow-hidden translate-y-40 transition-transform duration-200 ease-out peer-focus:peer-invalid:translate-y-0 ' +
-            ((!isNameValid && showInvalidatedInputs) ? 'translate-y-0' : '')
+            'ml-1 text-sm text-red-400 overflow-hidden opacity-0 transition-opacity duration-200 ease-out peer-focus:peer-invalid:opacity-100 ' +
+            ((!isNameValid && showInvalidatedInputs) ? 'opacity-100' : '')
           }>
             An identity is required
           </p>
         </div>
         
-        <div className='grid gap-1 overflow-hidden'>
+        <div className='grid gap-1'>
           <label htmlFor='contact-email'>
             Galactic electronic mail address
           </label>
@@ -231,14 +231,14 @@ const Form = () => {
             onChange={handleEmailChange}
           />
           <p className={
-            'ml-1 text-sm text-red-400 overflow-hidden translate-y-40 transition-transform duration-200 ease-out peer-focus:peer-invalid:translate-y-0 ' +
-            ((!isEmailValid && showInvalidatedInputs) ? 'translate-y-0' : '')
+            'ml-1 text-sm text-red-400 overflow-hidden opacity-0 transition-opacity duration-200 ease-out peer-focus:peer-invalid:opacity-100 ' +
+            ((!isEmailValid && showInvalidatedInputs) ? 'opacity-100' : '')
           }>
             An e-mail address is required
           </p>
         </div>
 
-        <div className='grid gap-1 overflow-hidden'>
+        <div className='grid gap-1'>
           <label htmlFor='contact-message'>
             Galactic message signals
           </label>
@@ -253,8 +253,8 @@ const Form = () => {
             onChange={handleMessageChange}
           />
           <p className={
-            'ml-1 text-sm text-red-400 overflow-hidden translate-y-40 transition-transform duration-200 ease-out peer-focus:peer-invalid:translate-y-0 ' +
-            ((!isMessageValid && showInvalidatedInputs) ? 'peer-focus:translate-y-0' : '')
+            'ml-1 text-sm text-red-400 overflow-hidden opacity-0 transition-opacity duration-200 ease-out peer-focus:peer-invalid:opacity-100 ' +
+            ((!isMessageValid && showInvalidatedInputs) ? 'peer-focus:opacity-100' : '')
           }>
             A message is required
           </p>
