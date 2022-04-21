@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import Form from '../components/Form'
 import AstronautVector from '../components/Images/AstronautVector'
+import BrandingLogoVector from '../components/Images/BrandingLogoVector'
 import MoonCurveVector from '../components/Images/MoonCurveVector'
 import SpaceCatVector from '../components/Images/SpaceCatVector'
 import SpaceVector from '../components/Images/SpaceVector'
@@ -25,17 +26,10 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
       </Head>
 
-      <header className='flex justify-between items-center mx-auto px-5 pt-5 pb-2 w-full max-w-screen-lg lg:px-9 lg:pt-7'>
+      <header className='flex justify-between items-center mx-auto px-5 pt-6 pb-2 w-full max-w-screen-lg lg:px-9 lg:pt-8'>
         <div className='flex items-center select-none pointer-events-none'>
           <h1 className='hidden'>Rendo Ruiz - Home</h1>
-          <img 
-            src='img/logo.svg'
-            alt='site logo'
-            className='w-6 h-6'
-          />
-          <span className='ml-2 font-light text-stone-200 text-2xl tracking-wide scale-x-110 origin-left'>
-            rendo
-          </span>
+          <BrandingLogoVector className='h-6' />
         </div>
 
         <div className='grid grid-flow-col gap-6'>
