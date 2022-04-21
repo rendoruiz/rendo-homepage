@@ -4,6 +4,14 @@ import Form from '../components/Form'
 import LinkButton from '../components/LinkButton'
 import ProjectImage from '../components/ProjectImage'
 
+import BrandingLogoVector from '../components/Images/BrandingLogoVector'
+import LinkedInIcon from '../components/Images/Icons/LinkedinIcon'
+import GitHubIcon from '../components/Images/Icons/GitHubIcon'
+import SpaceVector from '../components/Images/SpaceVector'
+import MoonCurveVector from '../components/Images/MoonCurveVector'
+import AstronautVector from '../components/Images/AstronautVector'
+import SpaceCatVector from '../components/Images/SpaceCatVector'
+
 export default function Home() {
   return (
     <div className='grid min-h-screen bg-violet-900/25 font-["Roboto"] text-white'>
@@ -21,39 +29,26 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
       </Head>
 
-      <header className='flex justify-between items-center mx-auto px-5 pt-5 pb-2 w-full max-w-screen-lg lg:px-9 lg:pt-7'>
+      <header className='flex justify-between items-center mx-auto px-5 pt-6 pb-2 w-full max-w-screen-lg lg:px-9 lg:pt-8'>
         <div className='flex items-center select-none pointer-events-none'>
           <h1 className='hidden'>Rendo Ruiz - Home</h1>
-          <img 
-            src='img/logo.svg'
-            alt='site logo'
-            className='w-6 h-6'
-          />
-          <span className='ml-2 font-light text-stone-200 text-2xl tracking-wide scale-x-110 origin-left'>
-            rendo
-          </span>
+          <BrandingLogoVector className='h-6' />
         </div>
 
         <div className='grid grid-flow-col gap-6'>
           <a 
             href='https://www.linkedin.com/in/rendo-ruiz'
+            title='linkedin page'
             className='opacity-50 transition-opacity hover:opacity-90'
           >
-            <img 
-              src='img/icon-li.svg' 
-              alt='linkedin page'
-              className='w-6 h-6'
-            />
+            <LinkedInIcon className='w-6 h-6' />
           </a>
           <a 
             href='https://github.com/rendoruiz'
+            title='github page'
             className='opacity-50 transition-opacity hover:opacity-90'
           >
-            <img 
-              src='img/icon-gh.svg' 
-              alt='github page'
-              className='w-6 h-6'
-            />
+            <GitHubIcon className='w-6 h-6' />
           </a>
         </div>
       </header>
@@ -74,21 +69,15 @@ export default function Home() {
               </p>
             </div>
 
-            <img  
-              src='img/space.svg'
-              alt='space stuff chilling (literally lmao) on space'
-              className='justify-self-center pt-16 w-10/12 max-w-[20rem] min-h-[17.5rem] bp360:min-h-[20.625rem] md:pt-4 md:max-w-[21.875rem] md:min-h-[20rem] lg:max-w-[25rem] lg:min-h-[25rem]'
+            <SpaceVector 
+              className='justify-self-center pt-16 w-10/12 max-w-[20rem] min-h-[17.5rem] bp360:min-h-[20.625rem] md:pt-4 md:max-w-[21.875rem] md:min-h-[20rem] lg:max-w-[25rem] lg:min-h-[25rem]' 
+              title='space stuff chilling (literally lmao) on space'
             />
           </div>
 
           {/* moon curve */}
           <div className='self-end grid -mb-1 pt-10 overflow-hidden'>
-            <img 
-              aria-hidden='true'
-              src='img/moon-curve.svg' 
-              alt='top moon curve'
-              className='w-full max-h-[10rem] rotate-180 moon-glow'
-            />
+            <MoonCurveVector flipped />
           </div>
         </section>
 
@@ -119,10 +108,9 @@ export default function Home() {
               </div>
             </div>
 
-            <img 
-              src='img/astronaut.svg'
-              alt='an astronaut reading naugthy alien (oc) smutfics on the moon for extra immersion'
+            <AstronautVector
               className='justify-self-center pt-10 w-3/4 max-w-[15.625rem] min-h-[13.75rem] drop-shadow-lg bp360:min-h-[16.875rem] md:-order-1 md:pt-0 md:w-10/12 md:max-w-[17.5rem] md:min-h-[19.375rem] lg:max-w-[20rem] lg:min-h-[22.5rem]'
+              title='an astronaut reading naugthy alien (oc) smutfics on the moon for extra immersion'
             />
           </div>
         </section>
@@ -131,12 +119,7 @@ export default function Home() {
         <section className='grid'>
           {/* moon curve */}
           <div className='self-end grid -mt-1 pb-10 overflow-hidden'>
-            <img 
-              aria-hidden='true'
-              src='img/moon-curve.svg' 
-              alt='bottom moon curve'
-              className='w-full max-h-[10rem] moon-glow'
-            />
+            <MoonCurveVector />
           </div>
 
           <div className='grid content-start mx-auto gap-6 px-5 py-12 w-full max-w-screen-lg md:gap-8 md:py-16 lg:gap-10 lg:py-20'>
@@ -343,10 +326,9 @@ export default function Home() {
         {/* contact */}
         <section className='relative grid'>
           <div className='relative grid gap-16 content-start mx-auto px-5 py-10 w-full max-w-screen-lg md:grid-cols-2 md:gap-6 md:pb-16 lg:grid-cols-[1fr,1.2fr] lg:gap-8'>
-            <img
-              src='img/spacecat.svg'
-              alt='stranded lab cat wandering on space, thinking about its life choices (assuming it had one)'
+            <SpaceCatVector
               className='justify-self-center w-full max-w-[20rem] min-h-[18.125rem] bp360:min-h-[22.5rem] md:self-center md:order-2 md:w-10/12 md:max-w-[23.75rem] lg:w-full lg:min-h-[26.875rem]'
+              title='stranded lab cat wandering on space, thinking about its life choices (assuming it had one)'
             />
 
             <div className='grid content-start gap-6'>
