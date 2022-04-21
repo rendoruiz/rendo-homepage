@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Form from '../components/Form'
 import AstronautVector from '../components/Images/AstronautVector'
 import MoonCurveVector from '../components/Images/MoonCurveVector'
+import SpaceCatVector from '../components/Images/SpaceCatVector'
 import SpaceVector from '../components/Images/SpaceVector'
 import LinkButton from '../components/LinkButton'
 import ProjectImage from '../components/ProjectImage'
@@ -334,10 +335,9 @@ export default function Home() {
         {/* contact */}
         <section className='relative grid'>
           <div className='relative grid gap-16 content-start mx-auto px-5 py-10 w-full max-w-screen-lg md:grid-cols-2 md:gap-6 md:pb-16 lg:grid-cols-[1fr,1.2fr] lg:gap-8'>
-            <img
-              src='img/spacecat.svg'
-              alt='stranded lab cat wandering on space, thinking about its life choices (assuming it had one)'
+            <SpaceCatVector
               className='justify-self-center w-full max-w-[20rem] min-h-[18.125rem] bp360:min-h-[22.5rem] md:self-center md:order-2 md:w-10/12 md:max-w-[23.75rem] lg:w-full lg:min-h-[26.875rem]'
+              title='stranded lab cat wandering on space, thinking about its life choices (assuming it had one)'
             />
 
             <div className='grid content-start gap-6'>
