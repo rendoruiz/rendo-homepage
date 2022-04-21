@@ -4,6 +4,7 @@ const SpaceVector = ({ className }) => (
     viewBox="0 0 463.52 466.14" 
     className={className}
   >
+    <title>space stuff chilling (literally lmao) on space</title>
     <path
       d="M405.23 55.823c55.714 75.617 95.01 298.88-9.941 376.2-104.95 77.327-314.41-20.562-370.12-96.18-55.714-75.617-15.799-199.6 89.152-276.93 104.95-77.326 235.2-78.712 290.91-3.095z"
       fill="#001c46"
