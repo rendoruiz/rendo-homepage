@@ -127,7 +127,7 @@ export default function Home() {
                 Personal Works
               </h3>
 
-              <ul className='grid gap-14 tracking-wide md:grid-cols-2 lg:gap-16 lg:font-light lg:text-lg'>
+              <ul className='grid gap-14 font-light tracking-wide md:grid-cols-2 lg:gap-16 lg:text-lg'>
                 <li className='grid gap-4 md:grid-rows-[auto,1fr,auto]'>
                   <ProjectImage 
                     src='img/card-kl.png' 
