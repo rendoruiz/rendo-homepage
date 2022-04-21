@@ -85,23 +85,14 @@ const Form = () => {
   }
 
   React.useEffect(() => {
-    const isValid = name.length >= nameMinLength;
-    if (isNameValid !== isValid) {
-      setIsNameValid(isValid);
-    }
-  }, [name.value]);
+    setIsNameValid(name.length >= nameMinLength);
+  }, [name]);
   React.useEffect(() => {
-    const isValid = email.length >= emailMinLength && email.includes('@') && email.includes('.');
-    if (isEmailValid !== isValid) {
-      setIsEmailValid(isValid);
-    }
-  }, [email.value]);
+    setIsEmailValid(email.length >= emailMinLength && email.includes('@') && email.includes('.'));
+  }, [email]);
   React.useEffect(() => {
-    const isValid = message.length >= messageMinLength;
-    if (isValid) {
-      setIsMessageValid(isValid);
-    }
-  }, [message.value]);
+    setIsMessageValid(message.length >= messageMinLength);
+  }, [message]);
 
   return (  
     <>
