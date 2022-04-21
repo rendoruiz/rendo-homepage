@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
 import Form from '../components/Form'
+import AstronautVector from '../components/Images/AstronautVector'
 import MoonCurveVector from '../components/Images/MoonCurveVector'
 import SpaceVector from '../components/Images/SpaceVector'
 import LinkButton from '../components/LinkButton'
@@ -76,7 +77,10 @@ export default function Home() {
               </p>
             </div>
 
-            <SpaceVector className='justify-self-center pt-16 w-10/12 max-w-[20rem] min-h-[17.5rem] bp360:min-h-[20.625rem] md:pt-4 md:max-w-[21.875rem] md:min-h-[20rem] lg:max-w-[25rem] lg:min-h-[25rem]' />
+            <SpaceVector 
+              className='justify-self-center pt-16 w-10/12 max-w-[20rem] min-h-[17.5rem] bp360:min-h-[20.625rem] md:pt-4 md:max-w-[21.875rem] md:min-h-[20rem] lg:max-w-[25rem] lg:min-h-[25rem]' 
+              title='space stuff chilling (literally lmao) on space'
+            />
           </div>
 
           {/* moon curve */}
@@ -112,10 +116,9 @@ export default function Home() {
               </div>
             </div>
 
-            <img 
-              src='img/astronaut.svg'
-              alt='an astronaut reading naugthy alien (oc) smutfics on the moon for extra immersion'
+            <AstronautVector
               className='justify-self-center pt-10 w-3/4 max-w-[15.625rem] min-h-[13.75rem] drop-shadow-lg bp360:min-h-[16.875rem] md:-order-1 md:pt-0 md:w-10/12 md:max-w-[17.5rem] md:min-h-[19.375rem] lg:max-w-[20rem] lg:min-h-[22.5rem]'
+              title='an astronaut reading naugthy alien (oc) smutfics on the moon for extra immersion'
             />
           </div>
         </section>
