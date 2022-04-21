@@ -174,7 +174,7 @@ const Form = () => {
         netlify-honeypot='spacejar'
         data-netlify-recaptcha='true'
         data-netlify='true' 
-        className='grid content-start gap-4 font-light text-lg tracking-wide'
+        className='grid content-start gap-1 font-light text-lg tracking-wide'
         onSubmit={handleSubmit}
       >
         <input 
@@ -191,7 +191,7 @@ const Form = () => {
           />
         </label>
 
-        <div className='grid gap-1'>
+        <div className='grid gap-1 overflow-hidden'>
           <label htmlFor='contact-name'>
             Galactic identity
           </label>
@@ -208,14 +208,14 @@ const Form = () => {
             onChange={handleNameChange}
           />
           <p className={
-            'ml-1 text-sm text-red-400 max-h-0 overflow-hidden transition-all duration-200 ease-out peer-focus:peer-invalid:max-h-[2.5rem] ' +
-            ((!isNameValid && showInvalidatedInputs) ? 'max-h-[2.5rem]' : '')
+            'ml-1 text-sm text-red-400 overflow-hidden translate-y-40 transition-transform duration-200 ease-out peer-focus:peer-invalid:translate-y-0 ' +
+            ((!isNameValid && showInvalidatedInputs) ? 'translate-y-0' : '')
           }>
             An identity is required
           </p>
         </div>
         
-        <div className='grid gap-1'>
+        <div className='grid gap-1 overflow-hidden'>
           <label htmlFor='contact-email'>
             Galactic electronic mail address
           </label>
@@ -231,14 +231,14 @@ const Form = () => {
             onChange={handleEmailChange}
           />
           <p className={
-            'ml-1 text-sm text-red-400 max-h-0 overflow-hidden transition-all duration-200 ease-out peer-focus:peer-invalid:max-h-[2.5rem] ' +
-            ((!isEmailValid && showInvalidatedInputs) ? 'max-h-[2.5rem]' : '')
+            'ml-1 text-sm text-red-400 overflow-hidden translate-y-40 transition-transform duration-200 ease-out peer-focus:peer-invalid:translate-y-0 ' +
+            ((!isEmailValid && showInvalidatedInputs) ? 'translate-y-0' : '')
           }>
             An e-mail address is required
           </p>
         </div>
 
-        <div className='grid gap-1'>
+        <div className='grid gap-1 overflow-hidden'>
           <label htmlFor='contact-message'>
             Galactic message signals
           </label>
@@ -253,8 +253,8 @@ const Form = () => {
             onChange={handleMessageChange}
           />
           <p className={
-            'ml-1 text-sm text-red-400 max-h-0 overflow-hidden transition-all duration-200 ease-out peer-focus:peer-invalid:max-h-[2.5rem] ' +
-            ((!isMessageValid && showInvalidatedInputs) ? 'peer-focus:max-h-[2.5rem]' : '')
+            'ml-1 text-sm text-red-400 overflow-hidden translate-y-40 transition-transform duration-200 ease-out peer-focus:peer-invalid:translate-y-0 ' +
+            ((!isMessageValid && showInvalidatedInputs) ? 'peer-focus:translate-y-0' : '')
           }>
             A message is required
           </p>
@@ -262,7 +262,7 @@ const Form = () => {
 
         <button
           type='submit'
-          className='border-2 border-stone-200 rounded-lg mt-1 py-2 font-normal text-base text-center leading-tight tracking-wider uppercase transition-all hover:bg-stone-200 hover:text-black active:outline active:outline-2 active:outline-offset-4 active:outline-stone-200'
+          className='border-2 border-stone-200 rounded-lg mt-2 py-2 font-normal text-base text-center leading-tight tracking-wider uppercase transition-all hover:bg-stone-200 hover:text-black active:outline active:outline-2 active:outline-offset-4 active:outline-stone-200'
         >
           Send
         </button>
