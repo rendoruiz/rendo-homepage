@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import Form from '../components/Form'
 import MoonCurveVector from '../components/Images/MoonCurveVector'
+import SpaceVector from '../components/Images/SpaceVector'
 import LinkButton from '../components/LinkButton'
 import ProjectImage from '../components/ProjectImage'
 
@@ -75,11 +76,7 @@ export default function Home() {
               </p>
             </div>
 
-            <img  
-              src='img/space.svg'
-              alt='space stuff chilling (literally lmao) on space'
-              className='justify-self-center pt-16 w-10/12 max-w-[20rem] min-h-[17.5rem] bp360:min-h-[20.625rem] md:pt-4 md:max-w-[21.875rem] md:min-h-[20rem] lg:max-w-[25rem] lg:min-h-[25rem]'
-            />
+            <SpaceVector className='justify-self-center pt-16 w-10/12 max-w-[20rem] min-h-[17.5rem] bp360:min-h-[20.625rem] md:pt-4 md:max-w-[21.875rem] md:min-h-[20rem] lg:max-w-[25rem] lg:min-h-[25rem]' />
           </div>
 
           {/* moon curve */}
