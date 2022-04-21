@@ -18,7 +18,6 @@ export default function Home() {
       <Head>
         <title>Rendo Ruiz - Home</title>
         <meta name="description" content="A space cat lost in space." />
-        <link rel="icon" href="/favicon.ico" />
         <meta name="robots" content="nosnippet" />
         
         <meta property="og:title" content="Rendo Ruiz - Home" />
