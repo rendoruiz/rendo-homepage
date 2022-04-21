@@ -85,14 +85,23 @@ const Form = () => {
   }
 
   React.useEffect(() => {
-    setIsNameValid(name.length >= nameMinLength ? true : false);
-  }, [name]);
+    const isValid = name.length >= nameMinLength;
+    if (isNameValid !== isValid) {
+      setIsNameValid(isValid);
+    }
+  }, [name.value]);
   React.useEffect(() => {
-    setIsEmailValid((email.length >= emailMinLength && email.includes('@')) && email.includes('.') ? true : false);
-  }, [email]);
+    const isValid = email.length >= emailMinLength && email.includes('@') && email.includes('.');
+    if (isEmailValid !== isValid) {
+      setIsEmailValid(isValid);
+    }
+  }, [email.value]);
   React.useEffect(() => {
-    setIsMessageValid(message.length >= messageMinLength ? true : false);
-  }, [message]);
+    const isValid = message.length >= messageMinLength;
+    if (isValid) {
+      setIsMessageValid(isValid);
+    }
+  }, [message.value]);
 
   return (  
     <>
@@ -174,7 +183,7 @@ const Form = () => {
         netlify-honeypot='spacejar'
         data-netlify-recaptcha='true'
         data-netlify='true' 
-        className='grid content-start gap-1 font-light text-lg tracking-wide'
+        className='grid content-start font-light text-lg tracking-wide'
         onSubmit={handleSubmit}
       >
         <input 
@@ -208,7 +217,7 @@ const Form = () => {
             onChange={handleNameChange}
           />
           <p className={
-            'ml-1 text-sm text-red-400 overflow-hidden opacity-0 transition-opacity duration-200 ease-out peer-focus:peer-invalid:opacity-100 ' +
+            'ml-1 text-xs text-red-400 tracking-widest overflow-hidden opacity-0 transition-opacity duration-200 ease-out peer-focus:peer-invalid:opacity-100 ' +
             ((!isNameValid && showInvalidatedInputs) ? 'opacity-100' : '')
           }>
             An identity is required
@@ -231,7 +240,7 @@ const Form = () => {
             onChange={handleEmailChange}
           />
           <p className={
-            'ml-1 text-sm text-red-400 overflow-hidden opacity-0 transition-opacity duration-200 ease-out peer-focus:peer-invalid:opacity-100 ' +
+            'ml-1 text-xs text-red-400 tracking-widest overflow-hidden opacity-0 transition-opacity duration-200 ease-out peer-focus:peer-invalid:opacity-100 ' +
             ((!isEmailValid && showInvalidatedInputs) ? 'opacity-100' : '')
           }>
             An e-mail address is required
@@ -253,7 +262,7 @@ const Form = () => {
             onChange={handleMessageChange}
           />
           <p className={
-            'ml-1 text-sm text-red-400 overflow-hidden opacity-0 transition-opacity duration-200 ease-out peer-focus:peer-invalid:opacity-100 ' +
+            'ml-1 text-xs text-red-400 tracking-widest overflow-hidden opacity-0 transition-opacity duration-200 ease-out peer-focus:peer-invalid:opacity-100 ' +
             ((!isMessageValid && showInvalidatedInputs) ? 'peer-focus:opacity-100' : '')
           }>
             A message is required
