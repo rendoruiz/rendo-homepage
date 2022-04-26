@@ -26,7 +26,6 @@ export default function Home() {
 
       <header className='flex justify-between items-center mx-auto px-5 pt-6 pb-2 w-full max-w-screen-lg lg:px-9 lg:pt-8'>
         <div className='flex items-center select-none pointer-events-none'>
-          <h1 className='hidden'>Rendo Ruiz - Home</h1>
           <BrandingLogoVector className='h-6' />
         </div>
 
@@ -53,6 +52,7 @@ export default function Home() {
         <section className='grid min-h-[80vh] md:min-h-0'>
           <div className='grid content-center mx-auto px-5 py-16 w-full max-w-screen-lg text-center md:grid-cols-2 md:items-center md:py-20 md:text-left lg:grid-cols-[1fr,1.25fr] lg:py-24 2xl:py-36'>
             <div className='grid content-center md:justify-self-center'>
+              <h1 className='hidden'>Rendo Ruiz - Home</h1>
               <p className='font-extralight text-7xl md:tracking-wide lg:font-normal lg:text-8xl'>
                 Hello!
               </p>
