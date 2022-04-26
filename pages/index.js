@@ -52,17 +52,18 @@ export default function Home() {
         {/* hero */}
         <section className='grid min-h-[80vh] md:min-h-0'>
           <div className='grid content-center mx-auto px-5 py-16 w-full max-w-screen-lg text-center md:grid-cols-2 md:items-center md:py-20 md:text-left lg:grid-cols-[1fr,1.25fr] lg:py-24 2xl:py-36'>
-            <div className='grid content-center md:justify-self-center'>
-              <p className='font-extralight text-7xl md:tracking-wide lg:font-normal lg:text-8xl'>
+            <h2 className='grid content-center md:justify-self-center'>
+              <span className='font-extralight text-7xl md:tracking-wide lg:font-normal lg:text-8xl'>
                 Hello!
-              </p>
-              <p className='mt-3 font-thin text-3xl tracking-wider md:mt-5 md:text-4xl lg:text-[2.5rem] lg:leading-[1.1]'>
+              </span>
+              <span className='leading-[0]'>&nbsp;</span>
+              <span className='mt-3 font-thin text-3xl tracking-wider md:mt-5 md:text-4xl lg:text-[2.5rem] lg:leading-[1.1]'>
                 I&apos;m&nbsp;
-                <span className='font-normal'>Rendo</span>, 
+                <span className='font-normal'>Rendo</span>,&nbsp;
                 <br />
                 <span className='text-2xl md:text-3xl md:tracking-normal lg:tracking-wide'>a Web Developer</span>.
-              </p>
-            </div>
+              </span>
+            </h2>
 
             <SpaceVector 
               className='justify-self-center pt-16 w-10/12 max-w-[20rem] min-h-[17.5rem] bp360:min-h-[20.625rem] md:pt-4 md:max-w-[21.875rem] md:min-h-[20rem] lg:max-w-[25rem] lg:min-h-[25rem]' 
@@ -131,7 +132,7 @@ export default function Home() {
                 <li className='grid gap-4 md:grid-rows-[auto,1fr,auto]'>
                   <ProjectImage 
                     src='img/card-kl.png' 
-                    alt='konolist card image'
+                    alt='image card for konolist project'
                   />
 
                   <div className='grid content-start gap-3'>
@@ -167,7 +168,7 @@ export default function Home() {
                 <li className='grid gap-4 md:grid-rows-[auto,1fr,auto]'>
                   <ProjectImage 
                     src='img/card-hn.png' 
-                    alt='hacker news card image'
+                    alt='image card for hacker news project'
                   />
 
                   <div className='grid content-start gap-3'>
@@ -206,7 +207,7 @@ export default function Home() {
                 <li className='grid gap-4 md:grid-rows-[auto,1fr,auto]'>
                   <ProjectImage 
                     src='img/card-rn.png' 
-                    alt='readit news card image'
+                    alt='image card for readit news project'
                   />
 
                   <div className='grid content-start gap-3'>
@@ -239,7 +240,7 @@ export default function Home() {
                 <li className='grid gap-4 md:grid-rows-[auto,1fr,auto]'>
                   <ProjectImage 
                     src='img/card-rgl.png' 
-                    alt='recon game library card image'
+                    alt='image card for recon game library project'
                   />
 
                   <div className='grid content-start gap-3'>
@@ -281,7 +282,7 @@ export default function Home() {
                 <li className='grid content-start gap-4'>
                   <ProjectImage 
                     src='img/card-abdrones.png' 
-                    alt='alberta drone specialists card image'
+                    alt='image card for alberta drone specialists projects'
                   />
 
                   <h4 className='font-medium text-2xl lg:font-normal lg:tracking-wide'>
@@ -299,7 +300,7 @@ export default function Home() {
                 <li className='grid content-start gap-4'>
                   <ProjectImage 
                     src='img/card-bridgeit.png' 
-                    alt='bridgeit tech solutions card image'
+                    alt='image card for bridgeit tech solutions project'
                   />
 
                   <h4 className='font-medium text-2xl lg:font-normal lg:tracking-wide'>
