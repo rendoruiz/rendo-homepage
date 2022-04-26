@@ -131,7 +131,7 @@ export default function Home() {
                 <li className='grid gap-4 md:grid-rows-[auto,1fr,auto]'>
                   <ProjectImage 
                     src='img/card-kl.png' 
-                    alt='konolist card image'
+                    alt='image card for konolist project'
                   />
 
                   <div className='grid content-start gap-3'>
@@ -167,7 +167,7 @@ export default function Home() {
                 <li className='grid gap-4 md:grid-rows-[auto,1fr,auto]'>
                   <ProjectImage 
                     src='img/card-hn.png' 
-                    alt='hacker news card image'
+                    alt='image card for hacker news project'
                   />
 
                   <div className='grid content-start gap-3'>
@@ -206,7 +206,7 @@ export default function Home() {
                 <li className='grid gap-4 md:grid-rows-[auto,1fr,auto]'>
                   <ProjectImage 
                     src='img/card-rn.png' 
-                    alt='readit news card image'
+                    alt='image card for readit news project'
                   />
 
                   <div className='grid content-start gap-3'>
@@ -239,7 +239,7 @@ export default function Home() {
                 <li className='grid gap-4 md:grid-rows-[auto,1fr,auto]'>
                   <ProjectImage 
                     src='img/card-rgl.png' 
-                    alt='recon game library card image'
+                    alt='image card for recon game library project'
                   />
 
                   <div className='grid content-start gap-3'>
@@ -281,7 +281,7 @@ export default function Home() {
                 <li className='grid content-start gap-4'>
                   <ProjectImage 
                     src='img/card-abdrones.png' 
-                    alt='alberta drone specialists card image'
+                    alt='image card for alberta drone specialists projects'
                   />
 
                   <h4 className='font-medium text-2xl lg:font-normal lg:tracking-wide'>
@@ -299,7 +299,7 @@ export default function Home() {
                 <li className='grid content-start gap-4'>
                   <ProjectImage 
                     src='img/card-bridgeit.png' 
-                    alt='bridgeit tech solutions card image'
+                    alt='image card for bridgeit tech solutions project'
                   />
 
                   <h4 className='font-medium text-2xl lg:font-normal lg:tracking-wide'>
