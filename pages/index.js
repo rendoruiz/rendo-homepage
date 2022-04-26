@@ -26,6 +26,7 @@ export default function Home() {
 
       <header className='flex justify-between items-center mx-auto px-5 pt-6 pb-2 w-full max-w-screen-lg lg:px-9 lg:pt-8'>
         <div className='flex items-center select-none pointer-events-none'>
+          <h1 className='hidden'>Rendo Ruiz - Home</h1>
           <BrandingLogoVector className='h-6' />
         </div>
 
@@ -51,8 +52,7 @@ export default function Home() {
         {/* hero */}
         <section className='grid min-h-[80vh] md:min-h-0'>
           <div className='grid content-center mx-auto px-5 py-16 w-full max-w-screen-lg text-center md:grid-cols-2 md:items-center md:py-20 md:text-left lg:grid-cols-[1fr,1.25fr] lg:py-24 2xl:py-36'>
-            <div className='grid content-center md:justify-self-center'>
-              <h1 className='hidden'>Rendo Ruiz - Home</h1>
+            <h2 className='grid content-center md:justify-self-center'>
               <p className='font-extralight text-7xl md:tracking-wide lg:font-normal lg:text-8xl'>
                 Hello!
               </p>
@@ -62,7 +62,7 @@ export default function Home() {
                 <br />
                 <span className='text-2xl md:text-3xl md:tracking-normal lg:tracking-wide'>a Web Developer</span>.
               </p>
-            </div>
+            </h2>
 
             <SpaceVector 
               className='justify-self-center pt-16 w-10/12 max-w-[20rem] min-h-[17.5rem] bp360:min-h-[20.625rem] md:pt-4 md:max-w-[21.875rem] md:min-h-[20rem] lg:max-w-[25rem] lg:min-h-[25rem]' 
