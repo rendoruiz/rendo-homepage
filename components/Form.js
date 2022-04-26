@@ -181,10 +181,14 @@ const Form = () => {
           type='hidden' 
           name='form-name'
           value='homepage-contact'
+          aria-hidden="true" 
         />
 
         {/* honeypot */}
-        <label className='hidden'>
+        <label 
+          className='hidden'
+          aria-hidden="true" 
+        >
           <input 
             type='text' 
             name='spacejar' 
