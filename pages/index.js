@@ -55,7 +55,8 @@ export default function Home() {
             <h2 className='grid content-center md:justify-self-center'>
               <span className='font-extralight text-7xl md:tracking-wide lg:font-normal lg:text-8xl'>
                 Hello!
-              </span>&nbsp;
+              </span>
+              <span className='leading-[0]'>&nbsp;</span>
               <span className='mt-3 font-thin text-3xl tracking-wider md:mt-5 md:text-4xl lg:text-[2.5rem] lg:leading-[1.1]'>
                 I&apos;m&nbsp;
                 <span className='font-normal'>Rendo</span>,&nbsp;
