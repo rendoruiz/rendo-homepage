@@ -58,7 +58,7 @@ export default function Home() {
               </span>
               <span className='mt-3 font-thin text-3xl tracking-wider md:mt-5 md:text-4xl lg:text-[2.5rem] lg:leading-[1.1]'>
                 I&apos;m&nbsp;
-                <span className='font-normal'>Rendo</span>, 
+                <span className='font-normal'>Rendo</span>,&nbsp;
                 <br />
                 <span className='text-2xl md:text-3xl md:tracking-normal lg:tracking-wide'>a Web Developer</span>.
               </span>
