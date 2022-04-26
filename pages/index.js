@@ -53,15 +53,15 @@ export default function Home() {
         <section className='grid min-h-[80vh] md:min-h-0'>
           <div className='grid content-center mx-auto px-5 py-16 w-full max-w-screen-lg text-center md:grid-cols-2 md:items-center md:py-20 md:text-left lg:grid-cols-[1fr,1.25fr] lg:py-24 2xl:py-36'>
             <h2 className='grid content-center md:justify-self-center'>
-              <p className='font-extralight text-7xl md:tracking-wide lg:font-normal lg:text-8xl'>
-                Hello!
-              </p>
-              <p className='mt-3 font-thin text-3xl tracking-wider md:mt-5 md:text-4xl lg:text-[2.5rem] lg:leading-[1.1]'>
+              <span className='font-extralight text-7xl md:tracking-wide lg:font-normal lg:text-8xl'>
+                Hello!&nbsp;
+              </span>
+              <span className='mt-3 font-thin text-3xl tracking-wider md:mt-5 md:text-4xl lg:text-[2.5rem] lg:leading-[1.1]'>
                 I&apos;m&nbsp;
                 <span className='font-normal'>Rendo</span>, 
                 <br />
                 <span className='text-2xl md:text-3xl md:tracking-normal lg:tracking-wide'>a Web Developer</span>.
-              </p>
+              </span>
             </h2>
 
             <SpaceVector 
